@@ -1,0 +1,1526 @@
+﻿{
+    "generated_at":  "2026-06-19T09:12:02",
+    "note":  "This queue is not proof of completion. It only records the next reading work.",
+    "category_3":  {
+                       "source_summary_count":  0,
+                       "not_yet_specialized_count":  132,
+                       "batches":  [
+                                       {
+                                           "batch":  "c3-04",
+                                           "count":  20,
+                                           "status":  "pending",
+                                           "ids":  [
+                                                       17723,
+                                                       20880,
+                                                       19820,
+                                                       547,
+                                                       18034,
+                                                       7819,
+                                                       20593,
+                                                       16774,
+                                                       13280,
+                                                       19666,
+                                                       21083,
+                                                       17676,
+                                                       17694,
+                                                       11207,
+                                                       20884,
+                                                       996,
+                                                       14729,
+                                                       860,
+                                                       4673,
+                                                       17258
+                                                   ]
+                                       },
+                                       {
+                                           "batch":  "c3-05",
+                                           "count":  20,
+                                           "status":  "pending",
+                                           "ids":  [
+                                                       9293,
+                                                       235,
+                                                       20139,
+                                                       2216,
+                                                       14471,
+                                                       12405,
+                                                       19519,
+                                                       17274,
+                                                       20012,
+                                                       9428,
+                                                       19987,
+                                                       215,
+                                                       14770,
+                                                       19802,
+                                                       6206,
+                                                       14991,
+                                                       19593,
+                                                       959,
+                                                       712,
+                                                       18503
+                                                   ]
+                                       },
+                                       {
+                                           "batch":  "c3-06",
+                                           "count":  20,
+                                           "status":  "pending",
+                                           "ids":  [
+                                                       11433,
+                                                       11833,
+                                                       813,
+                                                       203,
+                                                       6202,
+                                                       17975,
+                                                       2321,
+                                                       18825,
+                                                       18809,
+                                                       17734,
+                                                       7333,
+                                                       18480,
+                                                       17743,
+                                                       18041,
+                                                       13622,
+                                                       10643,
+                                                       17843,
+                                                       13448,
+                                                       17733,
+                                                       17721
+                                                   ]
+                                       },
+                                       {
+                                           "batch":  "c3-07",
+                                           "count":  20,
+                                           "status":  "pending",
+                                           "ids":  [
+                                                       17642,
+                                                       17432,
+                                                       14723,
+                                                       13510,
+                                                       924,
+                                                       5945,
+                                                       11861,
+                                                       17114,
+                                                       3425,
+                                                       10637,
+                                                       6208,
+                                                       16233,
+                                                       14908,
+                                                       16151,
+                                                       15574,
+                                                       5942,
+                                                       14820,
+                                                       10330,
+                                                       11360,
+                                                       14496
+                                                   ]
+                                       },
+                                       {
+                                           "batch":  "c3-08",
+                                           "count":  20,
+                                           "status":  "pending",
+                                           "ids":  [
+                                                       15246,
+                                                       15143,
+                                                       13519,
+                                                       13703,
+                                                       15001,
+                                                       6882,
+                                                       708,
+                                                       13535,
+                                                       9273,
+                                                       11781,
+                                                       14330,
+                                                       14329,
+                                                       13518,
+                                                       13526,
+                                                       14132,
+                                                       4397,
+                                                       1289,
+                                                       13696,
+                                                       13522,
+                                                       133
+                                                   ]
+                                       },
+                                       {
+                                           "batch":  "c3-09",
+                                           "count":  20,
+                                           "status":  "pending",
+                                           "ids":  [
+                                                       13611,
+                                                       13540,
+                                                       13548,
+                                                       13541,
+                                                       13539,
+                                                       13536,
+                                                       13529,
+                                                       13520,
+                                                       13523,
+                                                       13478,
+                                                       12535,
+                                                       13251,
+                                                       5316,
+                                                       12529,
+                                                       12564,
+                                                       847,
+                                                       7197,
+                                                       9379,
+                                                       1477,
+                                                       2624
+                                                   ]
+                                       },
+                                       {
+                                           "batch":  "c3-10",
+                                           "count":  12,
+                                           "status":  "pending",
+                                           "ids":  [
+                                                       1114,
+                                                       10719,
+                                                       10512,
+                                                       10673,
+                                                       4522,
+                                                       5555,
+                                                       3728,
+                                                       3280,
+                                                       1744,
+                                                       1769,
+                                                       1655,
+                                                       856
+                                                   ]
+                                       }
+                                   ],
+                       "threads":  [
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17723,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17723",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  20880,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/20880",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  19820,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/19820",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  547,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/547",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  18034,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/18034",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  7819,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/7819",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  20593,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/20593",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  16774,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/16774",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13280,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13280",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  19666,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/19666",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  21083,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/21083",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17676,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17676",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17694,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17694",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  11207,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/11207",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  20884,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/20884",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  996,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/996",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  14729,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/14729",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  860,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/860",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  4673,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/4673",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17258,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17258",
+                                           "batch":  "c3-04",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  9293,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/9293",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  235,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/235",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  20139,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/20139",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  2216,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/2216",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  14471,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/14471",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  12405,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/12405",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  19519,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/19519",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17274,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17274",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  20012,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/20012",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  9428,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/9428",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  19987,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/19987",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  215,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/215",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  14770,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/14770",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  19802,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/19802",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  6206,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/6206",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  14991,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/14991",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  19593,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/19593",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  959,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/959",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  712,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/712",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  18503,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/18503",
+                                           "batch":  "c3-05",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  11433,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/11433",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  11833,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/11833",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  813,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/813",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  203,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/203",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  6202,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/6202",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17975,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17975",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  2321,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/2321",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  18825,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/18825",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  18809,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/18809",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17734,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17734",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  7333,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/7333",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  18480,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/18480",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17743,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17743",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  18041,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/18041",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13622,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13622",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  10643,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/10643",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17843,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17843",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13448,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13448",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17733,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17733",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17721,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17721",
+                                           "batch":  "c3-06",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17642,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17642",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17432,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17432",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  14723,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/14723",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13510,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13510",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  924,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/924",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  5945,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/5945",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  11861,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/11861",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  17114,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/17114",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  3425,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/3425",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  10637,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/10637",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  6208,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/6208",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  16233,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/16233",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  14908,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/14908",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  16151,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/16151",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  15574,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/15574",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  5942,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/5942",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  14820,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/14820",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  10330,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/10330",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  11360,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/11360",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  14496,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/14496",
+                                           "batch":  "c3-07",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  15246,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/15246",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  15143,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/15143",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13519,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13519",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13703,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13703",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  15001,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/15001",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  6882,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/6882",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  708,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/708",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13535,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13535",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  9273,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/9273",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  11781,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/11781",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  14330,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/14330",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  14329,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/14329",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13518,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13518",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13526,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13526",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  14132,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/14132",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  4397,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/4397",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  1289,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/1289",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13696,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13696",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13522,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13522",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  133,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/133",
+                                           "batch":  "c3-08",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13611,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13611",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13540,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13540",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13548,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13548",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13541,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13541",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13539,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13539",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13536,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13536",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13529,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13529",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13520,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13520",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13523,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13523",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13478,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13478",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  12535,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/12535",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  13251,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/13251",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  5316,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/5316",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  12529,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/12529",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  12564,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/12564",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  847,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/847",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  7197,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/7197",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  9379,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/9379",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  1477,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/1477",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  2624,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/2624",
+                                           "batch":  "c3-09",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  1114,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/1114",
+                                           "batch":  "c3-10",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  10719,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/10719",
+                                           "batch":  "c3-10",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  10512,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/10512",
+                                           "batch":  "c3-10",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  10673,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/10673",
+                                           "batch":  "c3-10",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  4522,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/4522",
+                                           "batch":  "c3-10",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  5555,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/5555",
+                                           "batch":  "c3-10",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  3728,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/3728",
+                                           "batch":  "c3-10",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  3280,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/3280",
+                                           "batch":  "c3-10",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  1744,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/1744",
+                                           "batch":  "c3-10",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  1769,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/1769",
+                                           "batch":  "c3-10",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  1655,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/1655",
+                                           "batch":  "c3-10",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       },
+                                       {
+                                           "category":  3,
+                                           "thread_id":  856,
+                                           "url":  "https://bbs.zdjl.site/#/thread/detail/856",
+                                           "batch":  "c3-10",
+                                           "status":  "not-yet-specialized",
+                                           "priority":  "normal",
+                                           "topic_hint":  "needs source reread and topic routing",
+                                           "title":  ""
+                                       }
+                                   ]
+                   },
+    "category_4":  {
+                       "paused_by_user":  true,
+                       "active_learning":  false,
+                       "note":  "Paused by user request on 2026-06-18. Do not add Category 4 to the active learning queue.",
+                       "priority_candidate_count":  0,
+                       "priority_candidates":  [
+
+                                               ]
+                   },
+    "completion":  {
+                       "complete":  false,
+                       "can_mark_done_without_forum":  false
+                   }
+}

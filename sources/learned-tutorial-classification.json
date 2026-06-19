@@ -1,0 +1,253 @@
+{
+  "generated_at": "2026-06-19T08:20:00+08:00",
+  "purpose": "Machine-readable index for already learned Auto Wizard tutorial knowledge. Learned content does not need extra date checks; dates are only needed for unread cutoff decisions.",
+  "scope": {
+    "category_3_total_indexed": 309,
+    "category_3_specialized": 177,
+    "category_3_deep_read_records": 71,
+    "category_3_source_summary_only": 0,
+    "category_3_not_yet_specialized": 132,
+    "category_4_active_learning": false,
+    "category_4_note": "Paused by user request. Historical notes are retained as reference only."
+  },
+  "rules": [
+    "Do not spend time backfilling dates for already learned tutorials.",
+    "Classify learned tutorials by topic, usage, and target output.",
+    "Use created_at only for unread threads when a date cutoff is requested.",
+    "Do not mark a tutorial as learned without reading its source content.",
+    "Do not publish raw forum JSON, full copied posts, private tokens, credentials, paid-license content, or risky bypass steps."
+  ],
+  "categories": [
+    {
+      "id": "core-basics",
+      "name": "入門與核心觀念",
+      "status": "learned",
+      "primary_docs": [
+        "docs/core-tutorial-notes.md",
+        "docs/js-api-notes.md",
+        "docs/category-3-source-00-deep-read.md"
+      ],
+      "use_cases": [
+        "Understand Auto Wizard script structure",
+        "Find basic feature entry points",
+        "Prepare new tutorial summaries"
+      ]
+    },
+    {
+      "id": "js-api",
+      "name": "JS/API 速查",
+      "status": "learned",
+      "primary_docs": [
+        "docs/zdjl-api-cheatsheet.md",
+        "docs/file-api-log-notes.md"
+      ],
+      "use_cases": [
+        "Write Auto Wizard JavaScript",
+        "Reuse variable, storage, OCR, HTTP, and file APIs",
+        "Review scripts before running them"
+      ]
+    },
+    {
+      "id": "action-dsl",
+      "name": "動作表達式與 DSL",
+      "status": "learned",
+      "primary_docs": [
+        "docs/action-expression-dsl-notes.md"
+      ],
+      "use_cases": [
+        "Use runAction and action expressions",
+        "Split complex flows into reusable actions",
+        "Map visual action blocks to JavaScript logic"
+      ]
+    },
+    {
+      "id": "flow-state",
+      "name": "流程控制與狀態",
+      "status": "learned",
+      "primary_docs": [
+        "docs/flow-ui-variable-notes.md",
+        "docs/condition-jump-listener-notes.md"
+      ],
+      "use_cases": [
+        "Build state machines",
+        "Handle branches, listeners, retries, and task status",
+        "Manage variables across script steps"
+      ]
+    },
+    {
+      "id": "ui-markdown-dialog",
+      "name": "UI / Markdown / Dialog",
+      "status": "learned",
+      "primary_docs": [
+        "docs/ui-markdown-dialog-notes.md"
+      ],
+      "use_cases": [
+        "Build script configuration screens",
+        "Create dialogs and Markdown UI",
+        "Prepare user-facing controls for reusable scripts"
+      ]
+    },
+    {
+      "id": "visual-recognition",
+      "name": "OCR / 找圖 / 視覺識別",
+      "status": "learned",
+      "primary_docs": [
+        "docs/visual-recognition-notes.md",
+        "docs/video-tutorial-notes.md"
+      ],
+      "use_cases": [
+        "Detect game state from screenshots",
+        "Use OCR, image search, color search, and coordinates",
+        "Handle self-rendered game UIs"
+      ]
+    },
+    {
+      "id": "files-logs-storage",
+      "name": "檔案、日誌、資料保存",
+      "status": "learned",
+      "primary_docs": [
+        "docs/file-api-log-notes.md"
+      ],
+      "use_cases": [
+        "Persist config and runtime state",
+        "Write logs for debugging",
+        "Read and write JSON or text data"
+      ]
+    },
+    {
+      "id": "node-app-automation",
+      "name": "Node / App 自動化",
+      "status": "learned",
+      "primary_docs": [
+        "docs/node-app-automation-notes.md"
+      ],
+      "use_cases": [
+        "Find UI nodes by text, description, and children",
+        "Automate normal apps with structured selectors",
+        "Separate app automation from game visual automation"
+      ]
+    },
+    {
+      "id": "backend-deployment",
+      "name": "後端與部署",
+      "status": "learned",
+      "primary_docs": [
+        "docs/backend-deployment-notes.md",
+        "examples/backend-api-contract.example.json"
+      ],
+      "use_cases": [
+        "Design backend API contracts",
+        "Connect scripts to server-side services",
+        "Review license, auth, and update-flow boundaries safely"
+      ]
+    },
+    {
+      "id": "environment-stability",
+      "name": "環境與穩定性",
+      "status": "learned",
+      "primary_docs": [
+        "docs/environment-stability-notes.md"
+      ],
+      "use_cases": [
+        "Debug emulator and permission issues",
+        "Handle OCR errors and script freezes",
+        "Document runtime stability checks"
+      ]
+    },
+    {
+      "id": "ai-assisted",
+      "name": "AI 輔助寫腳本",
+      "status": "learned",
+      "primary_docs": [
+        "docs/ai-assisted-script-notes.md",
+        "prompts/code-review.md"
+      ],
+      "use_cases": [
+        "Turn tutorials into AI-readable knowledge",
+        "Generate script drafts with prompt guardrails",
+        "Review generated code before running it"
+      ]
+    },
+    {
+      "id": "wanlong-application",
+      "name": "萬龍覺醒腳本應用",
+      "status": "learned",
+      "primary_docs": [
+        "virtual_test_flow.md",
+        "prompts/wanlong-state-machine.md",
+        "examples/wanlong-config.example.json",
+        "examples/wanlong-state.example.json"
+      ],
+      "use_cases": [
+        "Design the virtual test flow",
+        "Classify gathering, marching, and resource states",
+        "Use screenshots as state-machine fixtures"
+      ]
+    },
+    {
+      "id": "github-readiness",
+      "name": "GitHub 發布與驗證",
+      "status": "learned",
+      "primary_docs": [
+        "docs/github-publishing-checklist.md",
+        "docs/github-upload-guide.md",
+        "docs/github-actions-ci.md",
+        "docs/source-attribution-policy.md"
+      ],
+      "use_cases": [
+        "Publish a GitHub-ready learning library",
+        "Run local and CI verification",
+        "Keep public content safe and attributable"
+      ]
+    }
+  ],
+  "deep_read_batches": [
+    {
+      "batch": "source-00",
+      "category": 3,
+      "planned": 11,
+      "done": 11,
+      "status": "learned",
+      "report": "docs/category-3-source-00-deep-read.md"
+    },
+    {
+      "batch": "c3-01",
+      "category": 3,
+      "planned": 20,
+      "done": 20,
+      "status": "learned",
+      "report": "docs/category-3-c3-01-deep-read.md"
+    },
+    {
+      "batch": "c3-02",
+      "category": 3,
+      "planned": 20,
+      "done": 20,
+      "status": "learned",
+      "report": "docs/category-3-c3-02-deep-read.md"
+    },
+    {
+      "batch": "c3-03",
+      "category": 3,
+      "planned": 20,
+      "done": 20,
+      "status": "learned",
+      "report": "docs/category-3-c3-03-deep-read.md"
+    },
+    {
+      "batch": "c3-04",
+      "category": 3,
+      "planned": 20,
+      "done": 0,
+      "status": "pending-source-access",
+      "report": "sources/category-3-c3-04-access-log.md"
+    }
+  ],
+  "recommended_entry_points": [
+    "docs/learned-tutorial-classification.md",
+    "sources/learned-tutorial-classification.json",
+    "START_HERE.md",
+    "docs/learning-library-index.md",
+    "sources/learning-status.generated.json"
+  ]
+}

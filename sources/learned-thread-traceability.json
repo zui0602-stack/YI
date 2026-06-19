@@ -1,0 +1,1031 @@
+﻿{
+    "generated_at":  "2026-06-19T09:09:53",
+    "purpose":  "Traceability from learned topic documents to Category 3 thread IDs. This is generated from sources/category-3-topic-coverage.md.",
+    "rules":  [
+                  "Already learned threads do not need date backfill.",
+                  "Each specialized thread should be traceable to at least one docs/*.md topic document.",
+                  "Duplicate references are expected when one thread informs multiple topics."
+              ],
+    "source":  "sources/category-3-topic-coverage.md",
+    "expected_specialized_count":  177,
+    "document_count":  19,
+    "unique_thread_count":  177,
+    "total_references":  330,
+    "unique_thread_count_matches_expected":  true,
+    "documents_with_count_mismatch":  [
+
+                                      ],
+    "duplicate_thread_references":  [
+                                        {
+                                            "id":  209,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  744,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  843,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  1097,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  1275,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  1380,
+                                            "references":  4
+                                        },
+                                        {
+                                            "id":  1698,
+                                            "references":  4
+                                        },
+                                        {
+                                            "id":  2583,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  2757,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  3468,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  3669,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  4598,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  4699,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  5068,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  5559,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  5574,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  6664,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  9041,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  9109,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  9506,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  9576,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  9716,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  9986,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  10237,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  10602,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  10679,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  10865,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  10959,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  11163,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  11178,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  11246,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  11362,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  11749,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  11889,
+                                            "references":  4
+                                        },
+                                        {
+                                            "id":  12755,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  13619,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  13820,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  13854,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  14309,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  14337,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  14761,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  14798,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  14838,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  14968,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  15009,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  15150,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  15692,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  15780,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  16173,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  16221,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  16274,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  16319,
+                                            "references":  6
+                                        },
+                                        {
+                                            "id":  16545,
+                                            "references":  4
+                                        },
+                                        {
+                                            "id":  17671,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  17850,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  17895,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  18050,
+                                            "references":  4
+                                        },
+                                        {
+                                            "id":  18245,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  18438,
+                                            "references":  4
+                                        },
+                                        {
+                                            "id":  18458,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  18519,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  18838,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  19076,
+                                            "references":  6
+                                        },
+                                        {
+                                            "id":  19365,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  20155,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  20308,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  20500,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  21596,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  21693,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  21920,
+                                            "references":  5
+                                        },
+                                        {
+                                            "id":  22075,
+                                            "references":  4
+                                        },
+                                        {
+                                            "id":  22076,
+                                            "references":  4
+                                        },
+                                        {
+                                            "id":  22077,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  22276,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  22321,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  23008,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  23546,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  23640,
+                                            "references":  5
+                                        },
+                                        {
+                                            "id":  23789,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  24122,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  25093,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  25229,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  25309,
+                                            "references":  2
+                                        },
+                                        {
+                                            "id":  25311,
+                                            "references":  3
+                                        },
+                                        {
+                                            "id":  25398,
+                                            "references":  6
+                                        },
+                                        {
+                                            "id":  25429,
+                                            "references":  6
+                                        },
+                                        {
+                                            "id":  25439,
+                                            "references":  4
+                                        }
+                                    ],
+    "documents":  [
+                      {
+                          "document":  "docs/action-expression-dsl-notes.md",
+                          "declared_count":  14,
+                          "parsed_count":  14,
+                          "ids":  [
+                                      25429,
+                                      22075,
+                                      21920,
+                                      18050,
+                                      17895,
+                                      18245,
+                                      19076,
+                                      22076,
+                                      11362,
+                                      10602,
+                                      14798,
+                                      14968,
+                                      18458,
+                                      17850
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/ai-assisted-script-notes.md",
+                          "declared_count":  9,
+                          "parsed_count":  9,
+                          "ids":  [
+                                      25429,
+                                      22075,
+                                      21920,
+                                      18050,
+                                      23546,
+                                      22076,
+                                      18458,
+                                      15780,
+                                      19
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/backend-deployment-notes.md",
+                          "declared_count":  19,
+                          "parsed_count":  19,
+                          "ids":  [
+                                      25309,
+                                      25311,
+                                      25093,
+                                      23640,
+                                      5068,
+                                      20500,
+                                      23008,
+                                      17671,
+                                      22321,
+                                      21693,
+                                      16274,
+                                      14309,
+                                      19365,
+                                      15150,
+                                      5559,
+                                      13820,
+                                      13854,
+                                      1275,
+                                      2757
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/category-3-c3-01-deep-read.md",
+                          "declared_count":  20,
+                          "parsed_count":  20,
+                          "ids":  [
+                                      2781,
+                                      20249,
+                                      13542,
+                                      10125,
+                                      9535,
+                                      10229,
+                                      17949,
+                                      15069,
+                                      11313,
+                                      23956,
+                                      171,
+                                      284,
+                                      9370,
+                                      2469,
+                                      21271,
+                                      17689,
+                                      10015,
+                                      811,
+                                      13580,
+                                      23062
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/category-3-c3-02-deep-read.md",
+                          "declared_count":  20,
+                          "parsed_count":  20,
+                          "ids":  [
+                                      6694,
+                                      1287,
+                                      803,
+                                      20051,
+                                      21730,
+                                      22969,
+                                      13556,
+                                      470,
+                                      3076,
+                                      10331,
+                                      14200,
+                                      13527,
+                                      822,
+                                      11274,
+                                      2082,
+                                      18661,
+                                      18712,
+                                      20795,
+                                      742,
+                                      8727
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/category-3-c3-03-deep-read.md",
+                          "declared_count":  20,
+                          "parsed_count":  20,
+                          "ids":  [
+                                      9232,
+                                      19446,
+                                      8630,
+                                      1238,
+                                      22359,
+                                      498,
+                                      22166,
+                                      22406,
+                                      22269,
+                                      5903,
+                                      17276,
+                                      21876,
+                                      9408,
+                                      8689,
+                                      16169,
+                                      15515,
+                                      18185,
+                                      897,
+                                      20221,
+                                      4578
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/category-3-source-00-deep-read.md",
+                          "declared_count":  11,
+                          "parsed_count":  11,
+                          "ids":  [
+                                      17748,
+                                      17705,
+                                      27,
+                                      12789,
+                                      6022,
+                                      10693,
+                                      2186,
+                                      713,
+                                      138,
+                                      6871,
+                                      250
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/category-4-first-pass-notes.md",
+                          "declared_count":  1,
+                          "parsed_count":  1,
+                          "ids":  [
+                                      19076
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/core-tutorial-notes.md",
+                          "declared_count":  10,
+                          "parsed_count":  10,
+                          "ids":  [
+                                      6664,
+                                      25439,
+                                      25429,
+                                      16545,
+                                      25398,
+                                      16319,
+                                      14838,
+                                      18438,
+                                      11246,
+                                      19076
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/environment-stability-notes.md",
+                          "declared_count":  6,
+                          "parsed_count":  6,
+                          "ids":  [
+                                      22276,
+                                      18519,
+                                      21596,
+                                      12755,
+                                      10959,
+                                      3669
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/file-api-log-notes.md",
+                          "declared_count":  12,
+                          "parsed_count":  12,
+                          "ids":  [
+                                      10865,
+                                      3468,
+                                      11163,
+                                      9506,
+                                      18519,
+                                      209,
+                                      14337,
+                                      14309,
+                                      10237,
+                                      5574,
+                                      16221,
+                                      4699
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/flow-ui-variable-notes.md",
+                          "declared_count":  17,
+                          "parsed_count":  17,
+                          "ids":  [
+                                      25429,
+                                      25398,
+                                      16319,
+                                      744,
+                                      14838,
+                                      9716,
+                                      15009,
+                                      23640,
+                                      11889,
+                                      1097,
+                                      23789,
+                                      20308,
+                                      843,
+                                      9041,
+                                      18838,
+                                      9109,
+                                      19076
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/js-api-notes.md",
+                          "declared_count":  1,
+                          "parsed_count":  1,
+                          "ids":  [
+                                      1380
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/node-app-automation-notes.md",
+                          "declared_count":  5,
+                          "parsed_count":  5,
+                          "ids":  [
+                                      1380,
+                                      9986,
+                                      1698,
+                                      15780,
+                                      11749
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/tutorial-map.md",
+                          "declared_count":  83,
+                          "parsed_count":  83,
+                          "ids":  [
+                                      1380,
+                                      6664,
+                                      25309,
+                                      25439,
+                                      25311,
+                                      10865,
+                                      25429,
+                                      16545,
+                                      25398,
+                                      16319,
+                                      744,
+                                      14838,
+                                      18438,
+                                      11246,
+                                      25229,
+                                      25093,
+                                      9986,
+                                      9716,
+                                      22075,
+                                      21920,
+                                      15009,
+                                      3468,
+                                      23640,
+                                      11889,
+                                      5068,
+                                      11163,
+                                      1097,
+                                      20500,
+                                      23789,
+                                      18050,
+                                      20308,
+                                      23546,
+                                      23008,
+                                      843,
+                                      9041,
+                                      18838,
+                                      1698,
+                                      17671,
+                                      9576,
+                                      20155,
+                                      9109,
+                                      22276,
+                                      9506,
+                                      17895,
+                                      18245,
+                                      19076,
+                                      22076,
+                                      11362,
+                                      18519,
+                                      22321,
+                                      22077,
+                                      21693,
+                                      21596,
+                                      209,
+                                      14337,
+                                      16274,
+                                      14309,
+                                      12755,
+                                      10959,
+                                      10602,
+                                      19365,
+                                      14798,
+                                      10237,
+                                      14968,
+                                      5574,
+                                      11178,
+                                      16221,
+                                      15150,
+                                      5559,
+                                      13820,
+                                      3669,
+                                      4699,
+                                      18458,
+                                      17850,
+                                      13619,
+                                      15780,
+                                      16173,
+                                      13854,
+                                      11749,
+                                      1275,
+                                      2757,
+                                      4598,
+                                      2583
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/ui-markdown-dialog-notes.md",
+                          "declared_count":  21,
+                          "parsed_count":  21,
+                          "ids":  [
+                                      25398,
+                                      16319,
+                                      744,
+                                      25229,
+                                      9716,
+                                      22075,
+                                      21920,
+                                      15009,
+                                      23640,
+                                      11889,
+                                      18050,
+                                      843,
+                                      9041,
+                                      9576,
+                                      20155,
+                                      22076,
+                                      22077,
+                                      11178,
+                                      13619,
+                                      16173,
+                                      2583
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/video-tutorial-notes.md",
+                          "declared_count":  18,
+                          "parsed_count":  18,
+                          "ids":  [
+                                      23882,
+                                      15160,
+                                      25311,
+                                      25398,
+                                      16319,
+                                      25229,
+                                      2276,
+                                      887,
+                                      4699,
+                                      18319,
+                                      13619,
+                                      16173,
+                                      10211,
+                                      13187,
+                                      2114,
+                                      1664,
+                                      1514,
+                                      2052
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/visual-recognition-notes.md",
+                          "declared_count":  18,
+                          "parsed_count":  18,
+                          "ids":  [
+                                      25439,
+                                      16545,
+                                      18438,
+                                      13534,
+                                      25093,
+                                      9986,
+                                      22411,
+                                      24122,
+                                      4581,
+                                      22160,
+                                      8099,
+                                      23546,
+                                      15692,
+                                      6926,
+                                      10679,
+                                      1698,
+                                      14761,
+                                      351
+                                  ],
+                          "count_matches":  true
+                      },
+                      {
+                          "document":  "docs/zdjl-api-cheatsheet.md",
+                          "declared_count":  25,
+                          "parsed_count":  25,
+                          "ids":  [
+                                      1380,
+                                      25439,
+                                      10865,
+                                      25429,
+                                      16545,
+                                      25398,
+                                      16319,
+                                      18438,
+                                      21920,
+                                      23640,
+                                      11889,
+                                      24122,
+                                      15692,
+                                      10679,
+                                      1698,
+                                      14761,
+                                      19076,
+                                      209,
+                                      14337,
+                                      10237,
+                                      5574,
+                                      16221,
+                                      11749,
+                                      1275,
+                                      4598
+                                  ],
+                          "count_matches":  true
+                      }
+                  ],
+    "unique_thread_ids":  [
+                              19,
+                              27,
+                              138,
+                              171,
+                              209,
+                              250,
+                              284,
+                              351,
+                              470,
+                              498,
+                              713,
+                              742,
+                              744,
+                              803,
+                              811,
+                              822,
+                              843,
+                              887,
+                              897,
+                              1097,
+                              1238,
+                              1275,
+                              1287,
+                              1380,
+                              1514,
+                              1664,
+                              1698,
+                              2052,
+                              2082,
+                              2114,
+                              2186,
+                              2276,
+                              2469,
+                              2583,
+                              2757,
+                              2781,
+                              3076,
+                              3468,
+                              3669,
+                              4578,
+                              4581,
+                              4598,
+                              4699,
+                              5068,
+                              5559,
+                              5574,
+                              5903,
+                              6022,
+                              6664,
+                              6694,
+                              6871,
+                              6926,
+                              8099,
+                              8630,
+                              8689,
+                              8727,
+                              9041,
+                              9109,
+                              9232,
+                              9370,
+                              9408,
+                              9506,
+                              9535,
+                              9576,
+                              9716,
+                              9986,
+                              10015,
+                              10125,
+                              10211,
+                              10229,
+                              10237,
+                              10331,
+                              10602,
+                              10679,
+                              10693,
+                              10865,
+                              10959,
+                              11163,
+                              11178,
+                              11246,
+                              11274,
+                              11313,
+                              11362,
+                              11749,
+                              11889,
+                              12755,
+                              12789,
+                              13187,
+                              13527,
+                              13534,
+                              13542,
+                              13556,
+                              13580,
+                              13619,
+                              13820,
+                              13854,
+                              14200,
+                              14309,
+                              14337,
+                              14761,
+                              14798,
+                              14838,
+                              14968,
+                              15009,
+                              15069,
+                              15150,
+                              15160,
+                              15515,
+                              15692,
+                              15780,
+                              16169,
+                              16173,
+                              16221,
+                              16274,
+                              16319,
+                              16545,
+                              17276,
+                              17671,
+                              17689,
+                              17705,
+                              17748,
+                              17850,
+                              17895,
+                              17949,
+                              18050,
+                              18185,
+                              18245,
+                              18319,
+                              18438,
+                              18458,
+                              18519,
+                              18661,
+                              18712,
+                              18838,
+                              19076,
+                              19365,
+                              19446,
+                              20051,
+                              20155,
+                              20221,
+                              20249,
+                              20308,
+                              20500,
+                              20795,
+                              21271,
+                              21596,
+                              21693,
+                              21730,
+                              21876,
+                              21920,
+                              22075,
+                              22076,
+                              22077,
+                              22160,
+                              22166,
+                              22269,
+                              22276,
+                              22321,
+                              22359,
+                              22406,
+                              22411,
+                              22969,
+                              23008,
+                              23062,
+                              23546,
+                              23640,
+                              23789,
+                              23882,
+                              23956,
+                              24122,
+                              25093,
+                              25229,
+                              25309,
+                              25311,
+                              25398,
+                              25429,
+                              25439
+                          ]
+}

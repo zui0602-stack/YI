@@ -1,0 +1,172 @@
+﻿{
+    "generated_at":  "2026-06-19T09:16:10",
+    "scope":  {
+                  "category_3":  "all tutorial threads, no date cutoff",
+                  "category_4":  "paused by user request on 2026-06-18",
+                  "source_urls":  [
+                                      "https://bbs.zdjl.site/#/thread/category/3"
+                                  ]
+              },
+    "category_3":  {
+                       "manifest_count":  309,
+                       "coverage_total":  309,
+                       "coverage_unique":  309,
+                       "missing_count":  0,
+                       "extra_count":  0,
+                       "duplicate_count":  0,
+                       "specialized":  177,
+                       "source_summary_only":  0,
+                       "not_yet_specialized":  132
+                   },
+    "category_4":  {
+                       "paused_by_user":  true,
+                       "active_learning":  false,
+                       "note":  "User requested Category 4 should not be learned further on 2026-06-18. Historical notes are retained but not part of completion.",
+                       "api_total_threads":  7596,
+                       "deduped_threads":  7596,
+                       "actual_category_4":  7593,
+                       "valid_after_2024_01_01":  3535,
+                       "excluded_before_2024":  4058,
+                       "old_bumped_excluded":  195,
+                       "high_value_candidates":  1565,
+                       "representative_qna_summarized":  "145+"
+                   },
+    "deep_read":  {
+                      "formal_record_count":  71,
+                      "batches":  [
+                                      {
+                                          "batch":  "source-00",
+                                          "category":  3,
+                                          "planned":  11,
+                                          "planned_raw":  "11",
+                                          "done":  11,
+                                          "status":  "specialized",
+                                          "evidence":  "`docs/category-3-source-00-deep-read.md`, `sources/deep-reads/category3-*.md`"
+                                      },
+                                      {
+                                          "batch":  "c3-01",
+                                          "category":  3,
+                                          "planned":  20,
+                                          "planned_raw":  "20",
+                                          "done":  20,
+                                          "status":  "specialized",
+                                          "evidence":  "`docs/category-3-c3-01-deep-read.md`, `sources/deep-reads/category3-*.md`"
+                                      },
+                                      {
+                                          "batch":  "c3-02",
+                                          "category":  3,
+                                          "planned":  20,
+                                          "planned_raw":  "20",
+                                          "done":  20,
+                                          "status":  "specialized",
+                                          "evidence":  "`docs/category-3-c3-02-deep-read.md`, `sources/deep-reads/category3-*.md`"
+                                      },
+                                      {
+                                          "batch":  "c3-03",
+                                          "category":  3,
+                                          "planned":  20,
+                                          "planned_raw":  "20",
+                                          "done":  20,
+                                          "status":  "specialized",
+                                          "evidence":  "`docs/category-3-c3-03-deep-read.md`, `sources/deep-reads/category3-*.md`"
+                                      },
+                                      {
+                                          "batch":  "c3-04",
+                                          "category":  3,
+                                          "planned":  20,
+                                          "planned_raw":  "20",
+                                          "done":  0,
+                                          "status":  "pending source access",
+                                          "evidence":  "`sources/category-3-continuation-plan.md`, `sources/category-3-c3-04-access-log.md`"
+                                      },
+                                      {
+                                          "batch":  "c3-05",
+                                          "category":  3,
+                                          "planned":  20,
+                                          "planned_raw":  "20",
+                                          "done":  0,
+                                          "status":  "pending",
+                                          "evidence":  "`sources/category-3-continuation-plan.md`"
+                                      },
+                                      {
+                                          "batch":  "c3-06",
+                                          "category":  3,
+                                          "planned":  20,
+                                          "planned_raw":  "20",
+                                          "done":  0,
+                                          "status":  "pending",
+                                          "evidence":  "`sources/category-3-continuation-plan.md`"
+                                      },
+                                      {
+                                          "batch":  "c3-07",
+                                          "category":  3,
+                                          "planned":  20,
+                                          "planned_raw":  "20",
+                                          "done":  0,
+                                          "status":  "pending",
+                                          "evidence":  "`sources/category-3-continuation-plan.md`"
+                                      },
+                                      {
+                                          "batch":  "c3-08",
+                                          "category":  3,
+                                          "planned":  20,
+                                          "planned_raw":  "20",
+                                          "done":  0,
+                                          "status":  "pending",
+                                          "evidence":  "`sources/category-3-continuation-plan.md`"
+                                      },
+                                      {
+                                          "batch":  "c3-09",
+                                          "category":  3,
+                                          "planned":  20,
+                                          "planned_raw":  "20",
+                                          "done":  0,
+                                          "status":  "pending",
+                                          "evidence":  "`sources/category-3-continuation-plan.md`"
+                                      },
+                                      {
+                                          "batch":  "c3-10",
+                                          "category":  3,
+                                          "planned":  12,
+                                          "planned_raw":  "12",
+                                          "done":  0,
+                                          "status":  "pending",
+                                          "evidence":  "`sources/category-3-continuation-plan.md`"
+                                      },
+                                      {
+                                          "batch":  "c4-topic-next",
+                                          "category":  4,
+                                          "planned":  null,
+                                          "planned_raw":  "TBD",
+                                          "done":  0,
+                                          "status":  "paused by user request",
+                                          "evidence":  "`sources/category-4-continuation-plan.md`"
+                                      }
+                                  ]
+                  },
+    "github_readiness":  {
+                             "has_contributing":  true,
+                             "has_security":  true,
+                             "has_upload_guide":  true,
+                             "has_github_actions":  true,
+                             "has_pr_template":  true,
+                             "has_issue_templates":  true,
+                             "has_package_verifier":  true,
+                             "has_learned_classification":  true,
+                             "has_learned_traceability":  true
+                         },
+    "forum_status":  {
+                         "latest_recorded_probe":  "not recorded",
+                         "can_mark_unread_done":  false,
+                         "next_batch":  "c3-04",
+                         "access_checkpoint":  "sources/category-3-c3-04-access-log.md",
+                         "access_note":  "Browser-style access completed source-00 through c3-03 earlier, but 2026-06-19 c3-04 attempts hit 504/connection errors in Codex-accessible routes. Unread batches require source recovery before they can be marked learned."
+                     },
+    "completion":  {
+                       "complete":  false,
+                       "blockers":  [
+                                        "Category 3 still has not-yet-specialized threads.",
+                                        "Category 4 is paused by user request and is no longer part of active completion."
+                                    ]
+                   }
+}
