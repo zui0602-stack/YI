@@ -1,0 +1,11 @@
+{
+  "appId": "wanlong-gather",
+  "channel": "stable",
+  "latestVersion": "1.2.0",
+  "minVersion": "1.0.0",
+  "forceUpdate": false,
+  "downloadUrl": "https://example.invalid/releases/wanlong-gather.zjs",
+  "sha256": "replace-with-fake-hash",
+  "message": "修復資源搜尋失敗恢復邏輯",
+  "publishedAt": "2026-06-15T00:00:00+08:00"
+}

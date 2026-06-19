@@ -1,0 +1,30 @@
+{
+  "success": {
+    "ok": true,
+    "code": "OK",
+    "message": "success",
+    "data": {
+      "example": true
+    },
+    "serverTime": "2026-06-15T00:00:00+08:00",
+    "requestId": "example-request-id"
+  },
+  "error": {
+    "ok": false,
+    "code": "MISSING_PARAM",
+    "message": "missing required field",
+    "data": null,
+    "serverTime": "2026-06-15T00:00:00+08:00",
+    "requestId": "example-request-id"
+  },
+  "auth": {
+    "ok": true,
+    "code": "ACTIVE",
+    "message": "authorized",
+    "data": {
+      "expiresAt": "2026-12-31T23:59:59+08:00",
+      "features": ["gather", "multi_role"],
+      "serverTime": "2026-06-15T00:00:00+08:00"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "runId": "example-run-001",
+  "startedAt": "2026-06-15T00:00:00+08:00",
+  "currentRoleIndex": 0,
+  "currentRoleName": "role-01",
+  "currentState": "SEARCH_RESOURCE",
+  "currentResource": "gold",
+  "currentLevel": 5,
+  "searchCount": 2,
+  "failureCount": 0,
+  "troops": {
+    "available": 3,
+    "marching": 2,
+    "gathering": 0,
+    "returning": 0
+  },
+  "lastDetection": {
+    "type": "ocr",
+    "label": "resource-panel",
+    "text": "",
+    "matched": false,
+    "checkedAt": "2026-06-15T00:01:30+08:00"
+  },
+  "lastAction": {
+    "name": "act_click_search",
+    "ok": true,
+    "finishedAt": "2026-06-15T00:01:28+08:00"
+  },
+  "lastError": {
+    "code": "",
+    "message": "",
+    "screenshot": ""
+  },
+  "nextRecovery": "recover_back_world"
+}

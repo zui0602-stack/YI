@@ -1,0 +1,45 @@
+{
+  "profileName": "wanlong-gather-example",
+  "version": 1,
+  "resourcePlan": {
+    "enabled": true,
+    "priority": ["gold", "wood", "ore", "mana"],
+    "minLevel": 5,
+    "maxLevel": 8,
+    "maxSearchPerResource": 8,
+    "fallbackWhenNotFound": "lower_level_then_next_resource"
+  },
+  "roles": [
+    {
+      "name": "role-01",
+      "enabled": true,
+      "loginAction": "act_login_role_01",
+      "maxTroops": 5
+    },
+    {
+      "name": "role-02",
+      "enabled": true,
+      "loginAction": "act_login_role_02",
+      "maxTroops": 5
+    }
+  ],
+  "timeoutsMs": {
+    "loginRole": 90000,
+    "openSearch": 15000,
+    "searchResource": 30000,
+    "openResourcePanel": 10000,
+    "createTroop": 30000,
+    "march": 20000
+  },
+  "recognition": {
+    "ocrMinIntervalMs": 1500,
+    "imageMinIntervalMs": 1000,
+    "colorMinIntervalMs": 300,
+    "saveFailureScreenshot": true
+  },
+  "debug": {
+    "logLevel": "info",
+    "showStatusPanel": true,
+    "dryRun": false
+  }
+}
