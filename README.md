@@ -4,6 +4,7 @@
 
 ## 先從這裡開始
 
+- `AUTO_WIZARD_CORE_TUTORIAL.md`：真正的總教程講義，先看這份，裡面直接整理架構、JS、API、UI、條件、OCR、日誌、後端與萬龍狀態機。
 - `START_HERE.md`：學習庫入口，適合要開始學或要放 GitHub 前先看。
 - `docs/tutorial-learning-roadmap.md`：照主題安排的學習順序，從架構、API、流程、OCR、UI 到後端發布。
 - `docs/progress-dashboard.md`：目前完成度、待補批次、論壇狀態與最新檢查結果。
@@ -50,6 +51,7 @@
 ## 文件結構
 
 - `docs/learning-library-index.md`：GitHub 版完整學習庫總入口、收錄規則與覆蓋狀態。
+- `AUTO_WIZARD_CORE_TUTORIAL.md`：自動精靈核心教程總講義，直接教架構、JS、UI、條件、識別、日誌、後端與萬龍套用。
 - `docs/tutorial-learning-roadmap.md`：自動精靈教程學習順序、每階段練習與萬龍套用路線。
 - `docs/progress-dashboard.md`：目前可學內容、未完成批次、後續讀取順序與檢查結果。
 - `docs/forum-sync-workflow.md`：論壇 API 同步、原始 JSON 保存、深讀與回填流程。

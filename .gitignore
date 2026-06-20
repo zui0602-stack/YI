@@ -1,0 +1,25 @@
+# Raw forum dumps are for local verification, not public GitHub publishing.
+sources/raw/
+sources/raw-*/
+sources/raw-browser/
+
+# Local smoke-test output.
+tmp/
+*.tmp
+
+# Runtime logs and generated reports.
+*.log
+logs/
+reports/
+
+# Large visual test captures should be curated before publishing.
+screenshots/
+*.mp4
+*.mov
+*.avi
+
+# Common editor and OS files.
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

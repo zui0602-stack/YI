@@ -6,6 +6,7 @@
 
 | 區塊 | 狀態 | 入口 |
 |---|---|---|
+| 核心總教程 | 已整理 | `AUTO_WIZARD_CORE_TUTORIAL.md` |
 | 總索引 | 已整理 | `docs/learning-library-index.md` |
 | 學習路線 | 已整理 | `docs/tutorial-learning-roadmap.md` |
 | GitHub 發布檢查 | 已整理 | `docs/github-publishing-checklist.md` |
@@ -35,13 +36,14 @@
 
 ## 建議學習順序
 
-1. 先讀 `docs/architecture.md`，理解自動精靈不是單一腳本，而是「狀態機、動作、變量、識別、日誌、恢復」組成的系統。
-2. 再讀 `docs/zdjl-api-cheatsheet.md`，先把常用 API 的用途、失敗模式、判空習慣記起來。
-3. 接著讀 `docs/flow-ui-variable-notes.md` 和 `docs/condition-jump-listener-notes.md`，理解循環、跳轉、監聽、失敗重試。
-4. 然後讀 `docs/visual-recognition-notes.md`，把 OCR、找圖、找色、坐標自適應用在遊戲畫面。
-5. 再讀 `docs/ui-markdown-dialog-notes.md`，學配置頁、狀態面板、彈窗預設分支。
-6. 最後讀 `docs/backend-deployment-notes.md`、`docs/github-publishing-checklist.md`、`docs/github-upload-guide.md` 和 `docs/github-actions-ci.md`，準備發布、熱更新、授權、安全脫敏與自動驗證。
-7. 要改萬龍腳本時，回到 `virtual_test_flow.md`，用截圖先做虛擬流程驗證，再改真腳本。
+1. 先讀 `AUTO_WIZARD_CORE_TUTORIAL.md`，它是目前最像教程本體的總講義，直接整理架構、JS、API、UI、條件、OCR、日誌、後端與萬龍狀態機。
+2. 再讀 `docs/architecture.md`，理解自動精靈不是單一腳本，而是「狀態機、動作、變量、識別、日誌、恢復」組成的系統。
+3. 再讀 `docs/zdjl-api-cheatsheet.md`，先把常用 API 的用途、失敗模式、判空習慣記起來。
+4. 接著讀 `docs/flow-ui-variable-notes.md` 和 `docs/condition-jump-listener-notes.md`，理解循環、跳轉、監聽、失敗重試。
+5. 然後讀 `docs/visual-recognition-notes.md`，把 OCR、找圖、找色、坐標自適應用在遊戲畫面。
+6. 再讀 `docs/ui-markdown-dialog-notes.md`，學配置頁、狀態面板、彈窗預設分支。
+7. 最後讀 `docs/backend-deployment-notes.md`、`docs/github-publishing-checklist.md`、`docs/github-upload-guide.md` 和 `docs/github-actions-ci.md`，準備發布、熱更新、授權、安全脫敏與自動驗證。
+8. 要改萬龍腳本時，回到 `virtual_test_flow.md`，用截圖先做虛擬流程驗證，再改真腳本。
 
 ## 學習時要輸出的東西
 
