@@ -55,6 +55,7 @@
 
 ### 開始學習
 
+- `AUTO_WIZARD_CORE_TUTORIAL.md`：核心教程總講義，直接整理架構、JS 基本寫法、常用 API、UI、條件跳轉、OCR/找圖/找色、日誌、後端安全版與萬龍狀態機。
 - `START_HERE.md`：第一個入口，說明目前哪些內容可學、學習順序、尚未完成項目與檢查方式。
 - `docs/tutorial-learning-roadmap.md`：完整學習路線，把論壇教程轉成階段式課程與練習。
 - `docs/progress-dashboard.md`：目前進度、可學內容、待補批次、論壇狀態與檢查結果。
