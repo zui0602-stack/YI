@@ -1,0 +1,603 @@
+通用 API
+zdjl.getAppVersion(); // 获取当前自动精灵App 版本号，如“3.15.0”
+
+zdjl.getClipboard(); // 获取当前系统剪切板文本
+
+zdjl.setClipboard('文本'); // 设置当前系统剪切板文本
+
+zdjl.toast('提示'); // 显示一个自动消失的简易提示
+
+zdjl.toast('提示5s', 5000); // 显示一个 5s 后自动消失的简易提示(V2.23.0及之后版本)
+
+zdjl.toast('#MD\n## title'); // 展示 markdown 富文本格式 toast（v2.28.0及以后版本）
+
+zdjl.sleep(1000); // 等待 1s
+
+alert('提示信息'); // 执行后页面会出现提示框，返回值为空
+
+confirm('是否同意？'); // 执行后页面会出现提示框和确定取消按钮，确定后返回值为 true，取消后返回值为 false
+
+prompt('请输入'); // 执行后页面会出现输入弹窗，函数返回值为输入的内容，可以用第二个参数代表默认输入值
+
+zdjl.select({ title: '请选择', items: ['选项1', '选项2', '选项3']}); // 展示单选弹窗，方法返回值为 { result: 选中项索引, item: 选中项文字 }
+
+zdjl.select({ title: '请选择', items: ['选项1', '选项2', '选项3'], selectItems: ['选项2'], multi: true }); // 展示多选弹窗，默认选中项为“选项2”，方法返回值为 { result: [选中项索引数组], items: [选中项文字] }
+
+
+zdjl.alert('提示信息', { duration: 5000, title: '自定义标题' }); // 展示5s自动确认的提示框（v2.22.0及以后版本）
+
+zdjl.confirm('是否同意', { duration: 5000, title: '自定义标题' }); // 展示5s自动确定的确认框（v2.22.0及以后版本）
+
+zdjl.prompt('请输入', '默认值', { duration: 5000 }); // 展示5s自动确定的输入框（v2.22.0及以后版本）
+
+zdjl.select({ title: '请选择', items: ['选项1', '选项2', '选项3'], selectItems: ['选项2'], multi: true, duration: 5000 }); // 展示5s自动确认的多选弹窗（v2.22.0及以后版本）
+
+zdjl.alert('#MD\n ## 提示信息'); // 展示 markdown 富文本格式 alert（v2.28.0及以后版本）
+​
+脚本变量
+读写“设置变量”动作设置的变量
+
+a; // “设置变量”动作设置的 变量（如：变量名a） 可直接用于代码内
+
+zdjl.getVar("a"); // 读取“设置变量”动作设置的“当前脚本作用域”内的变量 a
+
+zdjl.getVar("b", "global"); // 读取“设置变量”动作设置的 “全局作用域”内的变量 b
+
+zdjl.setVar("a", "aaa"); // 写入脚本变量 a 的值为字符 "aaa"（同 “设置变量” 动作）
+
+// 如果已通过 设置变量 或 setVar 定义了变量 a，也可以直接修改变量赋值
+a = 1; // 设置变量 a，同 setVar('a', 1);
+
+zdjl.setVar("b", 2, "global"); // 写入全局脚本变量 b 的值为数值 2（同 “设置变量” 动作）
+
+zdjl.setVar("a", undefined); // 删除脚本内变量 a
+
+zdjl.getVars(); // 读取当前脚本内所有变量（不包含全局变量）
+
+zdjl.getVars('global'); // 读取所有全局变量
+
+await zdjl.printVars(); // 弹窗展示当前所有脚本内和全局的变量
+
+zdjl.clearVars(); // 删除所有脚本内和全局的变量
+
+zdjl.clearVars(__scope); // 删除当前脚本内所有变量
+​
+console 控制台
+控制台模块用于在日志面板上输出调试信息。
+
+console.show(); // 显示 日志面板
+
+console.hide(); // 隐藏 日志面板
+
+console.log("日志信息"); // 输出日志信息到日志面板
+
+console.info("日志信息"); // 同 console.log
+
+console.debug("调试信息"); // 输出调试级别的日志信息到日志面板
+
+console.verbose("调试信息"); // 同 console.debug
+
+console.warn("警告信息"); // 输出警告级别的日志信息到日志面板（黄色显示）
+
+console.error("错误信息"); // 输出错误级别的日志信息到日志面板（红色显示）
+
+console.assert(condition, "condition 不成立"); // condition 值/表达式 不成立时，输出日志到日志面板（红色显示）
+
+console.clear(); // 清除日志面板内日志
+
+​
+脚本动作
+动态的创建一个脚本动作并运行
+
+ // 同步运行脚本动作：点击 (50%, 50%)
+zdjl.runAction({
+  type: "点击",
+  duration: "500", // 按下时间
+  posData: {
+    type: "location",
+    x: "50%",
+    y: "50%",
+  }
+});
+
+ // 异步运行脚本动作：点击 (50%, 50%)
+await zdjl.runActionAsync({
+  type: "点击",
+  duration: "500", // 按下时间
+  posData: {
+    type: "location",
+    x: "50%",
+    y: "50%",
+  }
+});
+
+// 检查动作条件是否成立(V2.25版本之后)
+zdjl.check(运行条件变量);  // 返回 true/false
+await zdjl.checkAsync(运行条件变量) // 异步检查，返回 true/false
+
+​
+其中 zdjl.runAction 的参数 {type: "点击", ...} 是动作类型键值对象，查看“动作键值对象”的办法：
+
+动作编辑弹窗 -> 动作类型选“设置变量” -> 设置一个变量类型为“脚本动作”的变量
+在“设置变量值”按钮上长按，选“查看变量表达式”即可看到 动作的键值对象
+请避免在 zdjl.runAction 中再调用 设置变量、运行JS代码 等依赖 JS 引擎的动作，会容易引起卡死。
+
+屏幕触摸操作
+// 点击：
+
+zdjl.click(x, y, duration); // 点击 x,y 的坐标位置，点击时长 duration 毫秒
+
+zdjl.click('50%', '50%'); // 点击屏幕中间
+
+zdjl.click('200dp', '100dp'); // 点击屏幕 200dp, 100dp 逻辑像素位置
+
+zdjl.click(300, 500, 1000); // 长按屏幕像素 300,500 的位置 1000毫秒(1秒)
+
+zdjl.longClick('50%', '50%'); // 长按屏幕中间位置，同 zdjl.click('50%', '50%', 600)
+
+
+// 滑动：
+
+zdjl.swipe(x1, y1, x2, y2, duration); // 从 x1,y1 滑动到 x2,y2，滑动时长 duration 毫秒
+
+zdjl.swipe('50%', '50%', '50%', '10%', 1000); // 从屏幕中间向上滑动，滑动时长1000毫秒(50%,50% -> 50%,10%)
+
+
+// 单指手势：
+
+zdjl.gesture(duration, [x1, y1], [x2, y2], ...); // 手势滑动
+
+zdjl.gesture(2000, ['50%', '10%'], ['50%', '50%'], ['80%', '50%']); // 手势滑动(50%,10% -> 50%,50% -> 80%,50%)，时长 2000毫秒(2秒)
+
+
+// 多指手势：
+
+zdjl.gestures([delay1?, duration1, [x1, y1], [x2, y2], ...], [delay2?, duration2, [x3, y3], [x4, y4], ...], ...); // 多指手势。每个手势的参数为[delay, duration, 坐标1, 坐标2, ...], delay为延迟多久(毫秒)才执行该手势；duration为手势执行时长(毫秒)；坐标为手势经过的点的坐标。其中delay参数可以省略，默认为0。
+
+zdjl.gestures([0, 2000, ['80%', '20%'], ['50%', '50%']],
+              [0, 2000, ['20%', '80%'], ['50%', '50%']]); // 双指捏合手势
+
+
+// 触控手势事件:(最低系统版本要求 Android8)
+
+zdjl.touchDown(x, y); // 在 x,y 位置按下（V2.18及以后支持）
+
+zdjl.touchMove(x, y, 200); // 滑动至 x,y 位置，滑动时间 200ms（V2.18及以后支持）
+
+zdjl.touchUp(); // 抬起结束手势（V2.18及以后支持）
+
+​
+支持的坐标单位
+
+物理像素坐标，如：(100, 100)。
+逻辑像素坐标，如：('200dp', '100dp')。
+屏幕百分比坐标，如：('50%', '30%')。推荐使用百分比坐标保证多屏幕适配性
+键盘按键操作
+// 按下按键：
+zdjl.keyDown('a');
+
+// 抬起按键：
+zdjl.keyUp('a');
+
+// 组合按键，全选操作（Ctrl + A）
+zdjl.keyDown('ctrl');
+zdjl.keyDown('a');
+zdjl.sleep(100);
+zdjl.keyUp('a');
+zdjl.keyUp('ctrl');
+
+// 可以使用 zdjl.keyPress/keyPressAsync 简化调用：
+zdjl.keyPress('a'); // 按下按键A 100ms 后抬起
+zdjl.keyPress('ctrl', 'a', 200); // 按下 Ctrl+A（全选操作）200ms 后抬起
+
+​
+按键命令仅在 V2.25 版本及以后才支持，同时 App 端需要开启 自动精灵输入法 。
+
+所有支持的按键列表：
+
+'a' - 'z'：键盘 A-Z
+'0' - '9'：键盘 0-9
+'enter'：回车键
+'tab'：Tab 键
+'space'：空格键
+'backspace'：退格键（删除键）
+'esc'：Esc 键
+'shift'：Shift 键
+'ctrl'：Ctrl 键
+'alt'： Alt 键
+'win'：Win 键
+'up' / 'down' / 'left' / 'right'：上 / 下 / 左 / 右 方向键
+符号键（ '-' '=' '[' ']' '\' ';' "'" ',' '.' '/' '`'）：键盘上一一对应的符号键
+查找坐标
+可以根据传入的条件，查找屏幕上的坐标。（屏幕左上角为坐标轴原点，x轴从左向右，y轴从上向下）
+
+// 查找屏幕上一处文字坐标
+var location = zdjl.findLocation({
+  type: 'text', // 文字类型
+  text: '文本', // 文字内容
+  ocrMode: 'online', // 云识别
+});
+if (!location) throw new Error('未找到坐标');
+console.log('x坐标(像素)', location.x);
+console.log('y坐标(像素)', location.y);
+console.log('x坐标(百分比)', location.x_100);
+console.log('y坐标(百分比)', location.y_100);
+console.log('x坐标(dp)', location.x_dp);
+console.log('y坐标(dp)', location.y_dp);
+
+// 查找屏幕上所有指定节点类名的节点坐标
+var allLocations = zdjl.findLocation({
+  type: 'node', // 节点类型
+  // 节点类名:
+  className: 'android.widge.TextView',
+}, true); // 第二个参数传 true，代表返回所有查找结果
+
+console.log('节点数量', allLocations.length);
+console.log('第一个节点x坐标', allLocations[0].x);
+​
+findLocation 的第一个参数需要传 坐标类型键值对象，查看办法：
+
+动作编辑弹窗 -> 动作类型选“设置变量” -> 设置一个变量类型为“坐标”的变量
+在“设置变量值”按钮上长按，选“查看变量表达式”即可看到 坐标类型键值对象
+查找节点
+可以根据传入的条件，查找屏幕上的节点。
+
+// 查找屏幕上一处节点
+var node = zdjl.findNode({
+  type: 'node', // 节点类型
+  idResName: 'xxx', // 节点id
+});
+if (!node) throw new Error('未找到节点');
+console.log('节点文字', node.text);
+console.log('节点类名', node.className);
+console.log('应用包名', node.packageName);
+console.log('节点左边框距屏幕左侧距离', node.boundLeft);
+console.log('节点上边框距屏幕顶部距离', node.boundTop);
+console.log('节点右边框距屏幕左侧距离', node.boundRight);
+console.log('节点下边框距屏幕顶部距离', node.boundBottom);
+
+// 查找屏幕上一处节点及其子节点
+var node2 = zdjl.findNode({
+  type: 'node', // 节点类型
+  idResName: 'xxx', // 节点id
+}, {
+  withChildren: true, // 第二个参数
+});
+if (!node2) throw new Error('未找到节点');
+console.log('节点文字', node2.text);
+console.log('节点内子节点数量', node2.children.length);
+console.log('节点内第一个子节点类名', node2.children[0].className);
+
+// 查找屏幕满足条件的所有节点
+var nodeAll = zdjl.findNode({
+  type: 'node', // 节点类型
+  idResName: 'xxx', // 节点id
+}, {
+  findAll: true, // 第二个参数
+});
+console.log('找到节点数量', nodeAll.length);
+console.log('找到的第一个子节点类名', nodeAll[0].className);
+​
+屏幕识别
+可以识别屏幕指定位置的 文字、验证码 等，能力同"变量-屏幕识别"一致。
+
+var result = zdjl.recognitionScreen({
+  recognitionArea: { left: '100dp', top: '150dp', right: '300dp', bottom: '200dp' }, // 或 “100dp 150dp 300dp 200dp”
+  recognitionMode: 'ocr_local', // 所有支持的模式：ocr_local(本地文字识别)，ocr_local_comp（本地文字识别-兼容模式），ocr_online(云文字识别)，image_captcha(图像验证码)，get_image_data(获取图像数据)，position_by_human（坐标人工识别，此时还需传入 humanRecMaxPositionCount 参数代表最多识别坐标数量）
+});
+console.log('识别结果', result); // 当前模式为“获取图像数据”时，result 为键值对象，其他模式为识别结果字符
+
+// 获取屏幕指定坐标的颜色值：
+zdjl.getScreenColor(500, 500); // 获得屏幕物理像素 500,500 处的颜色数值，如：16711680(红色)、65280(绿色)
+
+zdjl.getScreenColor('50%', '50%'); // 获得屏幕 50%,50% 位置处像素的颜色数值
+
+`#${zdjl.getScreenColor(500, 500).toString(16).padStart(6, '0')}`; // 获得屏幕物理像素 500,500 处的颜色16进制值，如：#ff0000(红色)、#00ff00(绿色)
+
+// 获取屏幕指定区域的颜色(2.17.0及之后版本支持)：
+zdjl.getScreenAreaColors({ x: 500, y: 500, width: 100, height: 100 }); // 获取屏幕上从 500,500 到 600,600 区域的所有像素，返回格式：{ data: [], x, y, width, height } 其中 data 为区域内 从左向右，从上向下排列的所有像素的颜色数值数组
+
+zdjl.getScreenAreaColors({ x: '50%', y: '50%', width: '10dp', height: '10dp' }); // 各参数支持单位
+
+zdjl.getScreenAreaColors({ x: '50%', y: '50%', width: '10dp', height: '10dp', ignoreCache: true }); // 内部有 200ms 内仅截图一次的缓存机制，可以用 ignoreCache 参数忽略缓存
+
+zdjl.getScreenAreaColors({ x: '50%', y: '50%', width: '10dp', height: '10dp', sample: 2 }); // 可以使用 sample(大于等于1的整数) 代表获取的是缩略图（以 1/sample 比例缩小），调用速度更快
+
+// 也可以直接用 zdjl.ocr 方法直接识别 base64 的图片 ocr 结果（V2.19及以后）
+zdjl.ocr({ mode: 'local', base64: 'xxxx图片base64后内容' }); // 返回本地 ocr 识别的结果
+
+zdjl.ocr({ mode: 'online', base64: 'xxxx图片base64后内容' }); // 返回云 ocr 识别的结果
+
+zdjl.ocr({ mode: 'local_comp', base64: 'xxxx图片base64后内容' }); // 返回本地识别（快速）识别的结果
+
+zdjl.ocr({ mode: 'online', base64: 'xxxx图片base64后内容', charWhiteList: '0123456789' }); // 返回云识别的结果（字符白名单为所有数字）
+
+zdjl.ocr({ mode: 'local', base64: 'xxxx图片base64后内容', resultType: 'raw' }); // 返回本地识别的原始结果（包含所有文字片段和坐标信息）
+​
+网络请求
+发起一个网络请求，能力同“变量-链接内容”一致。
+
+// 一个 GET 请求
+var result = zdjl.requestUrl({
+  url: 'http://zdjl.org',
+  method: 'GET', // 请求方法
+});
+console.log('返回状态码', result.code);
+console.log('返回请求头', result.headers);
+console.log('返回内容', result.body);
+
+// 请求 json 数据
+var result2 = zdjl.requestUrl({
+  url: 'http://quan.suning.com/getSysTime.do',
+  method: 'GET', // 请求方法
+});
+console.log('返回状态码', result2.code);
+var resultJSON = JSON.parse(result2.body);
+console.log('返回内容(json)', resultJSON);
+// （更多出入参用法 请直接查看“设置变量-链接内容”界面）
+​
+另外，JS 引擎内还可以使用 nodejs 的 http 模块、浏览器的 XMLHttpRequest 和 fetch API 来访问网络。
+
+更推荐用这些标准模块请求网络，示例：
+
+// nodejs 的 http 模块：(更多详细用法请百度)
+const http = require('http');
+http.get('http://zdjl.org', res => {
+  let getData = '';
+  res.on('data', (chunk) => { getData += chunk; });
+  res.on('end', () => {
+    alert(getData);
+  });
+});
+// 浏览器 fetch API：(更多详细用法请百度)
+const text = await fetch('http://zdjl.org').then(resp => resp.text());
+alert(text);
+const json = await fetch('http://quan.suning.com/getSysTime.do').then(resp => resp.json());
+alert(json);
+// 还可以使用主流的网络请求类库，如 axios：(更多详细用法请百度)
+const axios = require('axios');
+const resp = await axios.get('http://zdjl.org');
+alert(resp.data);
+​
+文件读写
+本地文件内容的读写
+
+zdjl.writeFile('/sdcard/test.txt', '写入内容'); // 向本地文件覆盖写入内容
+
+zdjl.appendFile('/sdcard/test.txt', '添加内容'); // 向本地文件添加内容至文件尾部
+
+zdjl.readFile('/sdcard/test.txt'); // 读取本地文件文本内容(utf-8格式)
+
+zdjl.readFile('/sdcard/test.zip', { encode: 'BASE64' }); // 读取本地文件字节（BASE64格式）
+
+zdjl.readFile('/sdcard/test.zip', { returnBuffer: true }); // 读取本地文件字节（ArrayBuffer二进制格式）
+
+​
+更推荐用法，是使用标准的 nodejs fs 模块操作文件，拥有更灵活强大的能力 (v2.16及之后版本)：
+
+const fs = require('fs');
+
+fs.writeFileSync('/sdcard/test.txt', '写入内容'); // 写入文件内容
+
+fs.appendFileSync('/sdcard/test.txt', '写入内容'); // 添加文件内容
+
+var text = fs.readFileSync('/sdcard/test.txt') + ''; // 读取文件
+
+fs.copyFileSync('/sdcard/test.txt', '/sdcard/test_copy.txt'); // 复制文件
+
+fs.rmSync('/sdcard/test.txt', { force: true }); // 删除文件
+
+fs.renameSync('/sdcard/test.txt', '/sdcard/test2.txt'); // 重命名文件
+
+if (fs.existsSync('/sdcard/test.txt')) console.log('文件存在'); // 判断存在
+
+fs.readdirSync('/sdcard/'); // 读取文件夹下所有文件名
+
+Buffer.from(base64, 'base64'); // base64 字符转 buffer 数据
+
+fs.writeFileSync('/sdcard/xxx', buffer); // buffer 数据写入本地文件
+// 更多 api 和详情的参数说明请百度“nodejs fs”查看
+​
+本地存储
+提供便捷的读写简单数据的能力。储存的数据会一直保留，除非应用被清除数据/卸载。
+
+zdjl.setStorage('key1', '内容1'); // 设置 key1 的值为 '内容1'
+
+zdjl.getStorage('key1'); // 读取 key1 的值
+
+zdjl.removeStorage('key1'); // 删除 key1 的值
+
+// 数据储存默认在多个脚本间互相隔离。如果想要在多个脚本间共享，可以声明相同的存储域：
+zdjl.setStorage('key1', '内容1', 'scope1'); // 在存储域‘scope1’内设置 key1 的值为 '内容1'
+
+zdjl.getStorage('key1', 'scope1'); // 在存储域‘scope1’内读取 key1 的值
+
+zdjl.removeStorage('key1', 'scope1'); // 在存储域‘scope1’内删除 key1 的值
+
+​
+运行设备/环境
+提供当前脚本运行时的一些环境参数和设备能力
+
+__filename; // 取到当前运行的脚本文件名称
+
+console.log(zdjl.getUser()); // 当前登录用户信息。返回 null(未登录) 或 { userId: 用户ID, userName: 用户名, isVip: 是否自动精灵VIP(V2.20.0后新增) }
+
+console.log(zdjl.getDeviceInfo()); // 设备信息:
+//{
+//  appVersion(App版本),
+//  appVersionCode(App版本数值),
+//  deviceId(设备ID,App卸载重装后可能会变化),
+//  userAgent(设备UA，包含了系统版本、机型等信息),
+//  width(屏幕宽，不包括刘海屏、虚拟按键区域 等),
+//  height(屏幕高，不包括刘海屏、虚拟按键区域 等),
+//  density(屏幕精度),
+//  densityDpi(屏幕精度),
+//
+//  以下字段 V2.18新增
+//  screenWidth(屏幕宽，包括刘海屏、虚拟按键区域 等),
+//  screenHeight(屏幕高，包括刘海屏、虚拟按键区域 等),
+//  battery(电池电量 0-100),
+//  batteryIsCharging(电池是否在充电),
+//  screenRotation(屏幕旋转方向：0-无旋转，1-旋转90度，2-旋转180度，3-旋转270度),
+//  networkActivated(是否有网络),
+//  networkIsWifi(网络是否是 wifi),
+//  networkName(网络的名称-WIFI/MOBILE/...),
+//  screenOn(屏幕是否亮屏),
+//  clientType(客户端类型：android/pc),
+//
+//  以下字段 V2.25 新增
+//  screenBrightness(屏幕亮度),
+//  wifiEnable(WIFI是否打开),
+//  bluetoothEnable(蓝牙是否打开),
+//
+//  以下字段 V2.28 新增
+//  imeIsZDJL(是否开启了自动精灵输入法),
+//  isScriptEditMode(当前是编辑模式/运行模式),
+//  scriptStartTime(脚本开始运行的时间戳),
+//  lastPauseTime（脚本上次暂停的时间戳）
+//}
+
+__zdjl.reloadEngine(); // 重启 JS 引擎（注意会丢失所有全局/脚本变量，不建议使用）
+
+zdjl.wakeupScreen(); // 唤醒屏幕（V2.18 新增）
+
+zdjl.getLocation(); // 获取当前 定位经纬度、省市区街道地址 等信息（V2.19 新增）
+
+zdjl.vibrator(1000); // 震动1s（V2.22 新增）
+zdjl.vibrator(1000, 20); // 震动1s，第二个参数代表震动强度，取值1-255，仅部分机器支持（V2.22 新增）
+
+zdjl.setScreenBrightness(255); // 设置屏幕亮度(0-255)，可以传 -1 代表自动亮度（V2.25 新增）
+
+zdjl.setWifiEnable(true); // 控制 WIFI 开关（V2.25 新增）
+
+zdjl.setBluetoothEnable(true); // 控制蓝牙开关（V2.25 新增）
+
+zdjl.setCameraFlashEnable(true); // 闪光灯开关（V2.25 新增，Android6 及以上可以用）
+
+zdjl.getInstalledAppInfo(); // 获取当前手机已安装的应用信息，格式: [{ packageName(包名), versionCode(版本值), versionName(版本名), label(应用名), isSystemApp(是否系统应用) }]  (V2.26新增)
+
+zdjl.getMousePosition(); // 获取当前鼠标位置，格式: { x: 横坐标(基于运行区域)，y: 纵坐标(基于运行区域), xInScreen: 横坐标(基于屏幕), yInScreen: 纵坐标(基于屏幕) } （仅PC端 V2.26 版本后可用）
+​
+多媒体
+zdjl.playMedia('https://www.runoob.com/try/demo_source/horse.mp3'); // 播放网络音频（阻塞式调用直到音频结束）
+
+zdjl.playMedia('file:///sdcard/xxx.mp3'); // 播放本地音频（阻塞式调用直到音频结束）
+
+zdjl.playMediaAsync('https://www.runoob.com/try/demo_source/horse.mp3'); // 播放网络音频（异步非阻塞式调用，直到音频结束或JS代码运行结束）
+
+​
+加载三方模块
+自动精灵支持直接 require(包名) 加载 npm 包。
+
+也可以使用 require('http://xx.com/xxxx') 或 require('file:///sdcard/...') 从网络/本地加载 commonjs 规范的模块文件。
+
+理论上自动精灵 JS 引擎能兼容大部分 nodejs 和 浏览器用的 npm 包。
+
+如果发现有不支持的 npm 包，可以在论坛发帖说明场景请求支持。
+
+使用示例：
+
+时间处理模块(day.js)
+const dayjs = require('dayjs');
+const t1 = dayjs('2018-08-08'); // 以字符串解析时间
+alert(t1.format('YYYY-MM-DD HH:mm:ss')); // format 格式化时间 输出 2018-08-08 00:00:00
+const t2 = t1.set('month', 3); // 设置月份（从0开始，0代表1月）
+alert(t2.format('YYYY-MM-DD HH:mm:ss')); // format 格式化时间 输出 2018-04-08 00:00:00
+const t3 = t2.add(1, 'year'); // 调整年份（年+1）
+alert(t3.format('YYYY-MM-DD HH:mm:ss')); // format 格式化时间 输出 2019-04-08 00:00:00
+alert(t3.isBefore(dayjs())); // 提示 true（是否在当前时间之前）
+
+alert(dayjs().format('YYYY-MM-DD HH:mm:ss')); // format 格式化当前时间
+alert(dayjs().set('date', 1).format('YYYY-MM-DD')); // 展示本月1号时间。如：2021-03-01
+​
+更多用法可以百度搜索 day.js
+
+文件 MD5 / sha-256 摘要模块
+const { sha256 } = require('js-sha256@0.9.0/build/sha256.min.js');
+const md5 = require('js-md5@0.7.3/build/md5.min.js');
+
+const fileBuffer = zdjl.readFile('/sdcard/test.zip', { returnBuffer: true });
+
+alert(`MD5:\n${md5(fileBuffer)}\nsha256:\n${sha256(fileBuffer)}`);
+​
+png图像解码
+const UPNG = require('upng-js');
+alert(UPNG.decode(Buffer.from(imageVar.base64, 'base64'))); // imageVar 是“屏幕识别-获取图像”变量
+alert(UPNG.decode(require('fs').readFileSync('sdcard/img.png'))); // 解码本地 png 图片
+​
+异步调用
+同步调用的 API 在调用时，所有其他 JS 代码会阻塞式等待，直到同步调用的 API 调用结束。
+
+如：
+
+zdjl.runAction({...}); // runAction 是同步形式的调用，调用结束后才会执行下一行代码
+zdjl.runAction({...}); // 运行第二个动作
+​
+有一些必须场景必须使用异步 API 实现。如：
+
+同时运行多个动作，使用异步 API zdjl.runActionAsync 代替：
+
+await Promise.all([
+  Promise.resolve().then(async () => {
+    await zdjl.runActionAsync({...});
+  }),
+  Promise.resolve().then(async () => {
+    await zdjl.runActionAsync({...});
+  }),
+  // ... 更多同时运行的动作
+]);
+​
+网络请求时 提示等待 直到请求结束：
+
+var requestResult;
+var finish = false;
+await Promise.all([
+  Promise.resolve().then(async () => {
+    requestResult = await zdjl.requestUrlAsync({...});
+    finish = true;
+  }),
+  Promise.resolve().then(async () => {
+    while(!finish) {
+      zdjl.toast('正在请求数据...');
+      await zdjl.sleepAsync(1000);
+    }
+  }),
+]);
+finish = true;
+console.log('请求结果', requestResult);
+​
+异步 API 一览：
+
+zdjl.sleepAsync: 运行等待
+zdjl.alertAsync: 弹窗提示
+zdjl.confirmAsync: 弹窗确认
+zdjl.promptAsync: 弹窗输入
+zdjl.selectAsync: 弹窗选择
+zdjl.clickAsync: 点击
+zdjl.longClickAsync: 长按
+zdjl.swipeAsync: 滑动
+zdjl.gestureAsync: 单指手势
+zdjl.gesturesAsync: 多指手势
+zdjl.runActionAsync: 运行动作
+zdjl.findLocationAsync: 查找坐标
+zdjl.findNodeAsync: 查找节点
+zdjl.recognitionScreenAsync: 屏幕识别
+zdjl.getScreenColorAsync: 屏幕指定位置颜色
+zdjl.getScreenAreaColorsAsync: 屏幕指定区域的所有颜色
+zdjl.requestUrlAsync: 网络请求
+zdjl.writeFileAsync: 覆盖写入本地文件
+zdjl.appendFileAsync: 添加写入本地文件
+zdjl.readFileAsync: 读取本地文件
+zdjl.playMediaAsync: 播放音频
+zdjl.touchDownAsync/touchMoveAsync/touchUpAsync: 触控手势能力
+zdjl.ocrAsync: ocr 识别
+zdjl.getLocationAsync: 获取定位结果
+zdjl.vibratorAsync: 震动
+zdjl.setWifiEnableAsync: 设置 WIFI 开关
+zdjl.setBluetoothEnableAsync: 设置 蓝牙 开关
+zdjl.setCameraFlashEnableAsync: 设置 闪光灯 开关
+异步API的所有调用参数和普通同步API参数一样
+
+JS 语言标准
+自动精灵已支持到 JS 语言的最新语法标准（ES2020），你可以在代码中放心的使用最新规范的 JS 语法。
+以上是代码库，用代码库的内容来解决我下面提出的问题。

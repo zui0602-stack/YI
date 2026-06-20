@@ -1,0 +1,935 @@
+﻿<TITLE> 精灵js变量基础教程 </TITLE>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> </head>
+
+介绍：<br>
+本网页主要介绍JS 函数，底部有基础知识，<br>
+也有精灵官方教程，请先熟悉这2部分，<br>
+以便更容易理解本教程。<br>
+网页最后有简单的实例。<br>
+版本要求： 2.10.0版及以上【2020.09】<br>
+<!〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓>
+
+<html> <body>
+<form id="bdfm" target="_blank" name="bdfm" method="get" action="http://www.baidu.com/s">
+
+<table> <tr>
+  <td><br/><input type="text" style="width:230px;"id="search1" name="word"/></td>
+  <td><br/><input type="submit" value="百度一下" /></td>
+</tr> </table>
+</form> </body> </html>
+
+<br><!〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓>
+
+
+
+<!随机整数>
+<table border="1" style="border-collapse: collapse;">
+<tr><th colspan="" style="font-family:隶书;color:#00CC00;font-size:2em;">随　机　整　数</th></tr>
+
+<tr><td>1：随机生成 0 (含)与 1 (不含)之间的小数<br>
+<input type="text" style="width:270px;height:23px;font-size:12pt;color:#ff0000;" id="随机01" value="Math.random()">
+<button onClick="A随机01()">复制</button>
+   <script type="text/javascript">function A随机01()
+   { var Url2=document.getElementById("随机01"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+
+
+<p>2：返回 0 至 9 的随机整数<br>
+<input type="text" style="width:270px;height:23px;font-size:12pt;color:#ff0000;" id="随机02a" value="Math.floor(Math.random()*10)">
+<button onClick="A随机02a()">复制</button>
+   <script type="text/javascript">function A随机02a()
+   { var Url2=document.getElementById("随机02a"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+<br>
+<input type="text" style="width:270px;height:23px;font-size:12pt;color:#ff0000;" id="随机02b" value="parseInt(Math.random()*10)">
+<button onClick="A随机02b()">复制</button> 
+   <script type="text/javascript">function A随机02b()
+   { var Url2=document.getElementById("随机02b"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></p>
+
+
+<p>3：返回 0 至 55 的随机整数<br>
+<input type="text" style="width:270px;height:23px;font-size:12pt;color:#ff0000;" id="随机03" value="Math.floor(Math.random()*56)">
+<button onClick="A随机03()">复制</button>
+   <script type="text/javascript">function A随机03()
+   { var Url2=document.getElementById("随机03"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></p>
+
+
+<p>4：返回 33 至 132 的随机整数<br>
+<input type="text" style="width:270px;height:23px;font-size:11pt;color:#ff0000;" id="随机04" value="Math.floor(Math.random()*100)+33">
+<button onClick="A随机04()">复制</button>
+   <script type="text/javascript">function A随机04()
+   { var Url2=document.getElementById("随机04"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></p>
+
+
+<p>5：返回min至max(都包括)之间的随机整数<br>
+ …dom()*(95-8+1))+8→ 8到95的随机整数<br>
+<input type="text" style="width:290px;height:23px;font-size:10pt;color:#ff0000;" id="随机05" value="Math.floor(Math.random()*(max-min+1))+min">
+<button onClick="A随机05()">复制</button>
+   <script type="text/javascript">function A随机05()
+   { var Url2=document.getElementById("随机05"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></p>
+
+<br></td></tr></table>
+
+
+<br><!〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓>
+<!时间对象>
+<table border="1" style="border-collapse: collapse;">
+<tr><th colspan="4" style="font-family:隶书;color:#00CC00;font-size:2em;">Date 对象方法</th></tr>
+
+<tr><td>A</td>
+<td><input type="text" style="width:120px;height:23px;font-size:12pt;color:#ff0000;" id="时间A" value="Date()"></td>
+<td><button onClick="A时间A()">复制</button>
+   <script type="text/javascript">function A时间A()
+   { var Url2=document.getElementById("时间A"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>获取标准时间(CST)</td></tr>
+
+
+<tr><td>B</td>
+<td><input type="text" style="width:120px;height:23px;font-size:12pt;color:#ff0000;" id="时间B" value="Date.now()"></td>
+<td><button onClick="A时间B()">复制</button>
+   <script type="text/javascript">function A时间B()
+   { var Url2=document.getElementById("时间B"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>当前时间戳<font size="2">(单位ms)</font></td></tr>
+
+
+<tr><td>C</td>
+<td><input type="text" style="width:120px;height:23px;font-size:12pt;color:#ff0000;" id="时间C" value="Date.parse()"></td>
+<td><button onClick="A时间C()">复制</button>
+   <script type="text/javascript">function A时间C()
+   { var Url2=document.getElementById("时间C"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>指定时间戳</td></tr>
+
+
+<tr><td>D</td>
+<td><input type="text" style="width:120px;height:23px;font-size:12pt;color:#ff0000;" id="时间D" value="new Date()"></td>
+<td><button onClick="A时间D()">复制</button>
+   <script type="text/javascript">function A时间D()
+   { var Url2=document.getElementById("时间D"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>T为连接符,Z为时区</td></tr>
+
+<tr><th colspan="4">
+<font color="blue" style="text-align:center;font-weight:400;font-size:0.95em">
+Date()在不同手机显示可能不同，慎用
+</font>　</th>
+</tr>
+
+<tr><td>1</td>
+<td><input type="text" style="width:120px;height:23px;font-size:12pt;color:#ff0000;" id="时间01" value=".getFullYear()"></td>
+<td><button onClick="A时间01()">复制</button>
+   <script type="text/javascript">function A时间01()
+   { var Url2=document.getElementById("时间01"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>年（yyyy）<font size="2">完整年份</font></td></tr>
+
+
+<tr><td>2</td>
+<td><input type="text" style="width:120px;height:23px;font-size:12pt;color:#ff0000;" id="时间02" value=".getMonth()"></td>
+<td><button onClick="A时间02()">复制</button>
+   <script type="text/javascript">function A时间02()
+   { var Url2=document.getElementById("时间02"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>月（0-11）<font size="2">0为一月</font></td></tr>
+
+
+<tr><td>3</td>
+<td><input type="text" style="width:120px;height:23px;font-size:12pt;color:#ff0000;" id="时间03" value=".getDate()"></td>
+<td><button onClick="A时间03()">复制</button>
+   <script type="text/javascript">function A时间03()
+   { var Url2=document.getElementById("时间03"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>天（1-31）</td></tr>
+
+
+<tr><td>4</td>
+<td><input type="text" style="width:120px;height:23px;font-size:12pt;color:#ff0000;" id="时间04" value=".getHours()"></td>
+<td><button onClick="A时间04()">复制</button>
+   <script type="text/javascript">function A时间04()
+   { var Url2=document.getElementById("时间04"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>时（0-23）</td></tr>
+
+
+<tr><td>5</td>
+<td><input type="text" style="width:120px;height:23px;font-size:12pt;color:#ff0000;" id="时间05" value=".getMinutes()"></td>
+<td><button onClick="A时间05()">复制</button>
+   <script type="text/javascript">function A时间05()
+   { var Url2=document.getElementById("时间05"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>分（0-59）</td></tr>
+
+
+<tr><td>6</td>
+<td><input type="text" style="width:120px;height:23px;font-size:12pt;color:#ff0000;" id="时间06" value=".getSeconds()"></td>
+<td><button onClick="A时间06()">复制</button>
+   <script type="text/javascript">function A时间06()
+   { var Url2=document.getElementById("时间06"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>秒（0-59）</td></tr>
+
+
+<tr><td>7</td>
+<td><input type="text" style="width:120px;height:23px;font-size:10pt;color:#ff0000;" id="时间07" value=".getMilliseconds()"></td>
+<td><button onClick="A时间07()">复制</button>
+   <script type="text/javascript">function A时间07()
+   { var Url2=document.getElementById("时间07"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>毫秒（0- 999）</td></tr>
+
+
+<tr><td>8</td>
+<td><input type="text" style="width:120px;height:23px;font-size:12pt;color:#ff0000;" id="时间08" value=".getDay()"></td>
+<td><button onClick="A时间08()">复制</button>
+   <script type="text/javascript">function A时间08()
+   { var Url2=document.getElementById("时间08"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>周名 (0-6) <font size="2">0为星期日</font></td></tr>
+
+
+<tr><td>9</td>
+<td><input type="text" style="width:120px;height:23px;font-size:12pt;color:#ff0000;" id="时间09" value=".getTime()"></td>
+<td><button onClick="A时间09()">复制</button>
+   <script type="text/javascript">function A时间09()
+   { var Url2=document.getElementById("时间09"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>时间 <font size="2">(1970.01.01至今)</font></td></tr>
+
+
+<tr><th colspan="4">
+<table border="1" style="border-collapse: collapse;width:100%;height:23px;"><tr><td>
+
+
+<p>10: 把Date对象转为本地时间格式字符串
+<br><input type="text" style="width:180px;height:23px;font-size:12pt;color:#ff0000;" id="时间10" value=".toLocaleString()">
+<button onClick="A时间10()">复制</button>
+<br><script type="text/javascript">function A时间10()
+   { var Url2=document.getElementById("时间10"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script><p>
+
+
+<p>11: 把对象的日期部分转为本地时间格式
+<br><input type="text" style="width:180px;height:23px;font-size:12pt;color:#ff0000;" id="时间11" value=".toLocaleDateString()">
+<button onClick="A时间11()">复制</button>
+<br><script type="text/javascript">function A时间11()
+   { var Url2=document.getElementById("时间11"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script><p>
+
+
+<p>12: 把对象的时间部分转为本地时间格式
+<br><input type="text" style="width:180px;height:23px;font-size:12pt;color:#ff0000;" id="时间12" value=".toLocaleTimeString()">
+<button onClick="A时间12()">复制</button>
+<br><script type="text/javascript">function A时间12()
+   { var Url2=document.getElementById("时间12"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script><p>
+
+
+
+<font size="3" color="blue">
+①1-9首字母g改为s为设置时间(周名除外)<br>
+②1-12需搭配 new Date()，格式为：<br>
+　new Date().getFullYear() → 获取年份
+</font></th></tr></table>
+
+</table>
+
+
+
+<br><!〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓>
+<!数学对象>
+<table border="1" style="border-collapse: collapse;">
+<tr><th colspan="4" style="font-family:隶书;color:#00CC00;font-size:2em;">Math 对象方法</th></tr>
+
+<tr><td>1</td>
+<td><input type="text" style="width:100px;height:23px;font-size:12pt;color:#ff0000;" id="数学01" value="Math.min()"></td>
+<td><button onClick="A数学01()">复制</button>
+   <script type="text/javascript">function A数学01()
+   { var Url2=document.getElementById("数学01"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>返回最小值</td></tr>
+
+
+<tr><td>2</td>
+<td><input type="text" style="width:100px;height:23px;font-size:12pt;color:#ff0000;" id="数学02" value="Math.max()"></td>
+<td><button onClick="A数学02()">复制</button>
+   <script type="text/javascript">function A数学02()
+   { var Url2=document.getElementById("数学02"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>返回最大值</td></tr>
+
+
+<tr><td>3</td>
+<td><input type="text" style="width:100px;height:23px;font-size:12pt;color:#ff0000;" id="数学03" value="Math.pow()"></td>
+<td><button onClick="A数学03()">复制</button>
+   <script type="text/javascript">function A数学03()
+   { var Url2=document.getElementById("数学03"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>pow(x,y)返回x的y次幂</td></tr>
+
+
+<tr><td>4</td>
+<td><input type="text" style="width:100px;height:23px;font-size:12pt;color:#ff0000;" id="数学04" value="Math.sqrt()"></td>
+<td><button onClick="A数学04()">复制</button>
+   <script type="text/javascript">function A数学04()
+   { var Url2=document.getElementById("数学04"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>sqrt(x)返回x的平方根</td></tr>
+
+
+<tr><td>5</td>
+<td><input type="text" style="width:100px;height:23px;font-size:12pt;color:#ff0000;" id="数学05" value="Math.PI"></td>
+<td><button onClick="A数学05()">复制</button>
+   <script type="text/javascript">function A数学05()
+   { var Url2=document.getElementById("数学05"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td><p style="font-size:0.9em;">π→3.141592653589793</p></td></tr>
+
+
+<tr><td>6</td>
+<td><input type="text" style="width:100px;height:23px;font-size:12pt;color:#ff0000;" id="数学06" value="Math.abs()"></td>
+<td><button onClick="A数学06()">复制</button>
+   <script type="text/javascript">function A数学06()
+   { var Url2=document.getElementById("数学06"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>返回绝对 (正) 值</td></tr>
+
+
+<tr><td>7</td>
+<td><input type="text" style="width:100px;height:23px;font-size:11pt;color:#ff0000;" id="数学07" value="Math.round()"></td>
+<td><button onClick="A数学07()">复制</button>
+   <script type="text/javascript">function A数学07()
+   { var Url2=document.getElementById("数学07"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>四舍五入后的整数</td></tr>
+
+
+<tr><td>8</td>
+<td><input type="text" style="width:100px;height:23px;font-size:12pt;color:#ff0000;" id="数学08" value="Math.ceil()"></td>
+<td><button onClick="A数学08()">复制</button>
+   <script type="text/javascript">function A数学08()
+   { var Url2=document.getElementById("数学08"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>向上取整数</td></tr>
+
+
+<tr><td>9</td>
+<td><input type="text" style="width:100px;height:23px;font-size:12pt;color:#ff0000;" id="数学09" value="Math.floor()"></td>
+<td><button onClick="A数学09()">复制</button>
+   <script type="text/javascript">function A数学09()
+   { var Url2=document.getElementById("数学09"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></td>
+<td>向下取整数</td></tr>
+</table>
+
+
+
+<br><!〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓>
+<!数字对象>
+<table border="1" style="border-collapse: collapse;">
+<tr><th colspan="1" style="font-family:隶书;color:#00CC00;font-size:2em;">Number 对象方法</th></tr>
+
+<tr><td>
+<p>1：解析字符串，返回一个整数：<br>string:数据，radix:基数(2~36)
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="数字01" value="parseInt(string,radix)">
+<button onClick="A数字01()">复制</button>
+   <script type="text/javascript">function A数字01()
+   { var Url2=document.getElementById("数字01"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+
+<br><font style="font-size:0.95em;">规则：
+<br>①parseInt(2.345)→2
+<br>将数值解析，无基数，默认识别为10进制
+<br>②parseInt("　-55　33")→ -55
+<br>首位空格符,自动去除。遇到非数字,停止解析
+<br>③parseInt(111,2)→7
+<br>将2进制的111解析，返回10进制的结果7
+<br>④parseInt("12ab",16)→4779
+<br>将字符串解析为16进制，返回结果
+<br>⑤parseInt("12ab")→12
+<br>无基数，视为字符串解析，返回整数12
+</font><br><br></p></td></tr>
+
+
+
+<tr><td>
+<p>2：把Number对象转换为字符串
+<br>radix:基数(2~36)
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="数字02" value=".toString(radix)">
+<button onClick="A数字02()">复制</button>
+   <script type="text/javascript">function A数字02()
+   { var Url2=document.getElementById("数字02"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+
+<br><font style="font-size:0.95em;">规则：
+<br>①Boolean(1).toString()　　　　返回true
+<br>②Boolean(0).toString()　　　　返回false
+<br>③a.toString(2)→　将变量a转为2进制字符串
+<br>④与String()区别：无法转换null和undefined
+</font><br><br></p></td></tr>
+
+
+<tr><td>
+<p>3：四舍五入为指定小数位数的数字
+<br>num支持0到20，不写默认为0
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="数字03" value=".toFixed(num)">
+<button onClick="A数字03()">复制</button>
+   <script type="text/javascript">function A数字03()
+   { var Url2=document.getElementById("数字03"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+<br>X=3.426；X.toFixed(2)→12.43　 (留2位)
+<br>X=3.426；X.toFixed(4)→12.4260(留4位)
+<br><br></p></td></tr>
+
+
+<tr><td>
+<p>4：将"数字"四舍五入为指定长度的数字<br>num支持1到21
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="数字04" value=".toPrecision(num)">
+<button onClick="A数字04()">复制</button>
+   <script type="text/javascript">function A数字04()
+   { var Url2=document.getElementById("数字04"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+<br>X=1000；X.toPrecision(3)→ 1.00e+3
+<br>X=1000；X.toPrecision(6)→ 1000.00
+<br><br></p></td></tr>
+
+<tr><td><a href="http://www.baidu.com/s?word=Number对象方法">更多函数点击搜索 “Number对象方法”</a></td></tr>
+
+</table>
+
+
+
+<br><!〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓>
+<!字符对象>
+<table border="1" style="border-collapse: collapse;">
+<tr><th colspan="1" style="font-family:隶书;color:#00CC00;font-size:2em;">String 对象方法</th></tr>
+
+<tr><td>
+<p>1：提取字符串的某个部分
+<br>start:起点，end:终点(不填默认到结尾）
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="字符01" value=".slice(start,end)">
+<button onClick="A字符01()">复制</button>
+   <script type="text/javascript">function A字符01()
+   { var Url2=document.getElementById("字符01"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+
+<br>X="Hello world"；X.slice(6)，返回world
+<br>X="Hello world"；X.slice(6,9)，返回wor
+<br>X="Hello world"；X.slice(-3)，返回rld
+<br><br></p></td></tr>
+
+
+<tr><td>
+<p>2：提取指定位置和长度的字符串
+<br>start:起点，length:长度(不填默认到结尾)
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="字符02" value=".substr(start,length)">
+<button onClick="A字符02()">复制</button>
+   <script type="text/javascript">function A字符02()
+   { var Url2=document.getElementById("字符02"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+<br>X="你好，我是兔子～"　　(为变量X赋值)
+<br>X.substr(0,4) → 你好，我　(提取4个字)
+<br>X.substr(-4) → 是兔子～ (倒数第4到结尾)
+<br><br></p></td></tr>
+
+
+
+<tr><td>
+<p>3：返回字符串对象中的字符数目
+<br>中文、英文、符号，长度都视为1
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="字符03" value=".length">
+<button onClick="A字符03()">复制</button>
+   <script type="text/javascript">function A字符03()
+   { var Url2=document.getElementById("字符03"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+<br>X="自动精灵2.10.0" 　　(为X赋值)
+<br>X.length → 10　< 该函数后缀无() >
+<br><br></p></td></tr>
+
+
+
+<tr><td>
+<p>4：返回指定位置的字符，index:索引
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="字符04" value=".charAt(index)">
+<button onClick="A字符04()">复制</button>
+   <script type="text/javascript">function A字符04()
+   { var Url2=document.getElementById("字符04"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+<br>"自动精灵".charAt(0) → 自 (返回第1个字)
+<br>"自动精灵".charAt(4) →　(失败，无显示)
+<br><br></p></td></tr>
+
+
+
+<tr><td>
+<p>5：把字符串转换为小写
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="字符05" value=".toLowerCase()">
+<button onClick="A字符05()">复制</button>
+   <script type="text/javascript">function A字符05()
+   { var Url2=document.getElementById("字符05"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></p>
+
+
+<p>6：把字符串转换为大写
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="字符06" value=".toUpperCase()">
+<button onClick="A字符06()">复制</button>
+   <script type="text/javascript">function A字符06()
+   { var Url2=document.getElementById("字符06"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script><br><br></p></td></tr>
+
+
+<tr><td>
+<p>7：返回 指定对象 的原始值
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="字符07" value=".valueOf()">
+<button onClick="A字符07()">复制</button>
+   <script type="text/javascript">function A字符07()
+   { var Url2=document.getElementById("字符07"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+<br>①(1234567).valueOf() → 　 返回数字
+<br>②("123456").valueOf() →　 返回字符串
+<br>③[1,2,3,4,5,6].valueOf() →　返回数组
+<br>④Boolean(1).valueOf() →　返回布尔值
+<br>⑤Date().valueOf() →　　　返回时间
+<br>⑥XXX.valueOf() → 　　　返回变量XXX
+<br><br></p></td></tr>
+
+<tr><td><a href="http://www.baidu.com/s?word=String对象方法">更多函数点击搜索 “String对象方法”</a></td></tr>
+
+</table>
+
+
+<br><!〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓>
+<!数组对象>
+<table border="1" style="border-collapse: collapse;">
+<tr><th colspan="1" style="font-family:隶书;color:#00CC00;font-size:2em;">Array 对象方法</th></tr>
+
+<tr><td>
+<p>1：连接两个或多个数组
+<br>x可以为数值或者数组对象，数量无限制
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="数组01" value=".concat(x,x,x…)">
+<button onClick="A数组01()">复制</button>
+   <script type="text/javascript">function A数组01()
+   { var Url2=document.getElementById("数组01"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+
+<br>X=[1,2,3];　Y=["A","B"];　Z=["C","D"]
+<br>X.concat(4,5) → 1,2,3,4,5　(连接具体值)
+<br>X.concat(Y) →  1,2,3,A,B　　(连接数组)
+<br>X.concat(Y,Z)→ 1,2,3,A,B,C,D (注意逗号)
+<br><br></p></td></tr>
+
+
+<tr><td>
+<p>2：把数组中的所有元素放入一个字符串
+<br>元素通过指定的分隔符分隔
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="数组02" value=".join(分隔符)">
+<button onClick="A数组02()">复制</button>
+   <script type="text/javascript">function A数组02()
+   { var Url2=document.getElementById("数组02"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+
+<br>X=["聪明","努力","勤奋"]
+<br>X.join() →　聪明,努力,勤奋　(默认逗号)
+<br>X.join("？") →　聪明？努力？勤奋
+<br><br></p></td></tr>
+
+
+<tr><td>
+<p>3：返回第一个元素的值，并删除该元素
+<br>数组原始数值随之改变
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="数组03" value=".shift()">
+<button onClick="A数组03()">复制</button>
+   <script type="text/javascript">function A数组03()
+   { var Url2=document.getElementById("数组03"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+
+<br>举例：X=[1,2,3,4,5]　　　　(创建变量)
+<br>　　　X.shift() → 1 　(取出第一个元素)
+<br>此时　X=[2,3,4,5]　　　　　(删除元素)
+<br>再次　X.shift() → 2  　　　　(再次取出)
+<br>此时　X=[3,4,5]　　　(数组一直在改变)
+<br><br></p></td></tr>
+
+<tr><td><a href="http://www.baidu.com/s?word=Array对象方法">更多函数点击搜索 “Array对象方法”</a></td></tr>
+
+</table>
+
+
+<br><!〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓>
+<!类型对象>
+<table border="1" style="border-collapse: collapse;">
+<tr><th colspan="1" style="font-family:隶书;color:#00CC00;font-size:2em;">强制类型转换</th></tr>
+
+<tr><td>
+<p>1：把对象的值转换成布尔型
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="转换01" value="Boolean()">
+<button onClick="A转换01()">复制</button> 
+   <script type="text/javascript">function A转换01()
+   { var Url2=document.getElementById("转换01"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+
+<br><font style="font-size:0.95em;">规则：
+<br>①Boolean("")　　　返回false (空白字符串)
+<br>②Boolean(null)　　返回false (无结果)
+<br>③Boolean(0)　　　 返回false (数值为0)
+<br>④Boolean("hi")　　 返回true(明确的字符)
+<br>⑤Boolean(100)　　 返回true (明确的数字)
+<br>⑥…(new Object())　返回true (明确的对象)
+</font><br><br></p></td></tr>
+
+
+<tr><td>
+<p>2：把对象的值转换为数字
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="转换02" value="Number()">
+<button onClick="A转换02()">复制</button>
+   <script type="text/javascript">function A转换02()
+   { var Url2=document.getElementById("转换02"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+
+<br><font style="font-size:0.95em;">规则：
+<br>①Number(null)，返回0
+<br>②Number("5.6.7")，返回NaN
+<br>③Number(undefined)，返回NaN
+<br>④Number(new Object())，返回NaN
+<br>⑤Boolean值，true和false分别转换为1或0
+<br>⑥Number(Date())　1970.01.01至今毫秒数
+</font><br><br></p></td></tr>
+
+
+<tr><td>
+<p>3：把对象的值转换为字符串
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="转换03" value="String()">
+<button onClick="A转换03()">复制</button>
+   <script type="text/javascript">function A转换03()
+   { var Url2=document.getElementById("转换03"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script>
+
+<br><font style="font-size:0.95em;">规则：
+<br>①Boolean(1)，返回true
+<br>②Boolean(0)，返回false
+<br>③转换值是null，返回null
+<br>④转换值是undefined，返回undefined
+<br>⑤String(Date())→当前时间的文字表达
+</font><br><br></p></td></tr>
+</table>
+
+
+<br><!〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓>
+<!精灵对象>
+<table border="1" style="border-collapse: collapse;">
+<tr><th colspan="" style="font-family:隶书;color:#00CC00;font-size:2em;">精灵自带函数</th></tr>
+
+<tr><td>
+<p>1：当前剪切板内容
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="精灵01" value="zdjl.getClipboard()">
+<button onClick="A精灵01()">复制</button> 
+   <script type="text/javascript">function A精灵01()
+   { var Url2=document.getElementById("精灵01"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></p>
+
+
+<p>2：设置当前剪切板为指定的内容
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="精灵02" value="zdjl.setClipboard('内容')">
+<button onClick="A精灵02()">复制</button>
+   <script type="text/javascript">function A精灵02()
+   { var Url2=document.getElementById("精灵02"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></p>
+
+
+<p>3：弹窗展示当前所有已设置的变量
+<br><input type="text" style="font-size:12pt;color:#ff0000;" id="精灵03" value="zdjl.printVars()">
+<button onClick="A精灵03()">复制</button>
+   <script type="text/javascript">function A精灵03()
+   { var Url2=document.getElementById("精灵03"); // 选择id
+   Url2.select();                         // 选择对象
+   document.execCommand("Copy");          // 执行复制
+   alert("已复制，可贴粘。");  } </script></p>
+
+
+<a href="http://m.zdjl.org/app/show_md.html#JS%E8%A1%A8%E8%BE%BE%E5%BC%8F" target="_blank" style="text-decoration:none">
+<p style="color:#00AFFF;text-align:center;font-weight:900;font-size:15pt">☞　精　灵　内　置　教　程　</p></a>
+
+</td></tr></table>
+
+
+<br><!〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓>
+<!基础知识>
+<table border="2" style="border-collapse: collapse;width:330px;">
+<tr><th style="font-family:隶书;color:#00CC00;font-size:2em;">JS 基础知识</th></tr>
+
+<tr><td>
+
+<table border="1" style="border-collapse:collapse;width:98%;" align="center">
+<tr>  <th colspan="4">名词解释</td></tr>
+<tr>  <td> Number   </td> <td> 数值   </td>     <td> false    </td> <td> 假(布尔) </td>   </tr>
+<tr>  <td> String   </td> <td> 字符串 </td>     <td> true     </td> <td> 真(布尔) </td>   </tr>
+<tr>  <td> Boolean  </td> <td> 布尔   </td>     <td> undefined</td> <td> 未定义   </td>   </tr>
+<tr>  <td> Array    </td> <td> 数组   </td>     <td> null     </td> <td> 无值     </td>   </tr>
+<tr>  <td> Object   </td> <td> 对象   </td>     <td> new      </td> <td> 创建     </td>   </tr>
+<tr>  <td> Function </td> <td> 函数   </td>     <td> NaN      </td> <td> 非数字值 </td>   </tr>
+<tr>  <td> typeof   </td> <td> 类型   </td>     <td>          </td> <td>          </td>   </tr>    
+<tr>  <td>          </td> <td>        </td>     <td>          </td> <td>          </td>   </tr>
+<tr>  <td>          </td> <td>        </td>     <td>          </td> <td>          </td>   </tr>
+<tr>  <td>          </td> <td>        </td>     <td>          </td> <td>          </td>   </tr>
+<tr>  <td>          </td> <td>        </td>     <td>          </td> <td>          </td>   </tr>
+<tr>  <td>          </td> <td>        </td>     <td>          </td> <td>          </td>   </tr>
+<tr>  <td>          </td> <td>        </td>     <td>          </td> <td>          </td>   </tr>
+</table>
+
+
+
+<table border="1" style="border-collapse: collapse;width:98%;" align="center">
+<tr>  <th colspan="3">赋值运算符</td></tr>
+<tr>　<td>　符号</td>  <td>　例子　  </td>  <td>　　等同于　 </td>   </tr>
+<tr>  <td align="center"> =  </td>  <td>　x = y　 </td>  <td>　　　----   </td>   </tr>
+<tr>  <td align="center"> -= </td>  <td>　x -= y　</td>  <td>　x = x - y　</td>   </tr>
+<tr>  <td align="center"> *= </td>  <td>　x *= y　</td>  <td>　x = x * y　</td>   </tr>
+<tr>  <td align="center"> /= </td>  <td>　x /= y　</td>  <td>　x = x / y　</td>   </tr>
+<tr>  <td align="center"> %= </td>  <td>　x %= y　</td>  <td>　x = x % y　</td>   </tr>
+</table>
+
+<br>
+
+<table border="1" style="border-collapse:collapse;width:98%;" align="center">
+<tr><th colspan="6">算术运算符</td></tr>
+<tr>  <td align="center"> +  </td> <td>　加法　</td>     <td align="center"> -  </td> <td>　减法　</td>   </tr>
+<tr>  <td align="center"> *  </td> <td>　乘法　</td>     <td align="center"> /  </td> <td>　除法　</td>   </tr>
+<tr>  <td align="center"> ++ </td> <td>　递加　</td>     <td align="center"> -- </td> <td>　递减　</td>   </tr>
+<tr>  <td align="center"> %  </td> <td>　系数　</td>     <td align="center"> ** </td> <td>　  幂　</td>   </tr>
+</table>
+
+
+
+<table border="1" style="border-collapse: collapse;width:98%;" align="center">
+<tr>  <th colspan="4">比较运算符</td></tr>
+<tr>　<th colspan="2">符号：描述</td>                         <th colspan="2">符号：描述</td>  </tr>
+<tr>  <td align="center"> == </td> <td> 等于        </td>   <td align="center"> === </td> <td> 等值等型       </td>  </tr>
+<tr>  <td align="center"> >  </td> <td> 大于      　</td>   <td align="center"> <   </td> <td> 小于           </td>  </tr>
+<tr>  <td align="center"> >= </td> <td> 大于或等于　</td>   <td align="center"> <=  </td> <td> 小于或等于     </td>  </tr>
+<tr>  <td align="center"> != </td> <td> 不相等      </td>   <td align="center"> !== </td> <td> 不等值或不等型 </td>  </tr>
+<tr>  <td align="center"> ?  </td> <td> 三元运算符　</td>   <td align="center">     </td> <td>                </td>  </tr>
+</table>
+
+<br>
+
+<table border="1" style="border-collapse: collapse;width:100%;" align="center">
+<tr>  <th colspan="6">逻辑运算符</td></tr>
+<tr>  <td width="30px" align="center" bgcolor="grey"> && </td>  <td> 逻辑与　 </td>
+      <td width="30px" align="center" bgcolor="grey"> || </td>  <td> 逻辑或　 </td>   
+      <td width="30px" align="center" bgcolor="grey"> !  </td>  <td> 逻辑非　 </td>  </tr>
+</table>
+<br></td></tr></table>
+
+<br>更多变量函数可以直接上网址：
+<br>https://www.w3school.com.cn/js/index.asp
+<br>自学JS的用法，难度较高，有疑问请百度。
+<br>
+<br>
+<br>
+
+〓〓〓〓〓〓<font style="font-size:1.8em">变量实例</font>〓〓〓〓〓〓
+<font style="font-size:0.9em">
+<br>
+<br>体验变量，最简单的方法：
+<br>1 设置变量　变量名: a　值: 字符或数值等任意类型
+<br>2 弹窗提示　内容：a　(开启变量模式)
+<br>
+<br>
+<br><font style="font-weight:700;font-size:1.2em">【数字自动递增】</font>
+<br>1 设置变量　变量名: a　值: 0　(数值类型)
+<br>2 设置变量　变量名: a　值: a=a+1　(表达式)
+<br>3 弹窗提示　内容：a　(变量模式)
+<br>4 跳转到　　动作2
+<br>解释：－－－－－－－－－－－－－－－－－
+<br>1 将a定义为数字0 (全部变量名必须一致)
+<br>2 将a的意义，再次定义为自身基础上再+1
+<br>3 直接弹窗形式显示当前a的值
+<br>4 跳转到动作2，避免运行动作1将a重置为0
+<br>
+<br>
+<br><font style="font-weight:700;font-size:1.2em">【实际运用】</font>
+<br>1 设置变量　变量名: a　值: 0　(数值)
+<br>　　　　　　变量名: b　值: 0　(数值) 
+<br>　　(定义2个变量，有些变量有顺序要求)
+<br>
+<br>2 点击图片
+<br>　　监听-运行成功后：设置变量 名: a　值:a=a+1
+<br>　　监听-运行失败后：设置变量 名: b　值:b=b+1
+<br>　　(一切标点符号都为英文状态下输入)
+<br>
+<br>3 滑动　　运行条件:　表达式:a==3
+<br>　　(1个=为赋值，2个=为“等于”。当a等于3时，
+<br>　　做出滑动的动作，其他数值都会运行失败)
+<br>     
+<br>4 打开应用　运行条件：　表达式: a>5&&a<10
+<br>　　(当a大于5，同时小于10时，打开某应用)
+<br>
+<br>5 简易提示　内容："点击图片，失败了"+ b +"次"
+<br>　　(每次运行，提示失败次数。字符用成对引号
+<br>　　包裹。变量使用+号连接：类型都为数值，　　
+<br>　　执行算术运算。其他类型都为字符串拼接)
+<br>
+<br>6 控制运行　　跳转到　　值：-4(动作2)
+<br>　　(避免跳转到动作1使变量的值被初始化，
+<br>　　一般可以指定跳转的位置(避开初始变量)。
+<br>　　或者初始变量添加条件【限制运行】,次数1
+<br>　　或者编写在【脚本设置-全局监听】中，
+<br>　　避免被重复运行影响效率。)
+<br>
+<br>
+<br><font style="font-weight:700;font-size:1.2em">【偏移一个坐标】</font>
+<br>1 设置变量　变量名: 哈哈　类型:坐标　值:图片
+<br>　　(寻找一个图片，并把坐标赋值给一个变量)
+<br>
+<br>2 弹窗提示　　内容：哈哈 （变量）
+<br>　　(查看该图片所在的坐标表达式,{ }代表坐标
+<br>　　是一个对象值，xy代表横坐标和纵坐标，
+<br>　　用引号包裹中间用逗号分隔开。数字部分，
+<br>　　以当前手机屏幕分辨率为单位)
+<br>
+<br>3 点击　值：{"x":哈哈.x+300,"y":哈哈.y-200}
+<br>　　(哈哈.x　意思为变量哈哈里面名称为x的值
+<br>　　坐标变量是分辨率值，分别加减横纵坐标，
+<br>　　哈哈.x+300，即是横坐标向右偏移300个点，
+<br>　　哈哈.y-200，即是纵坐标向上偏移200个点。)
+<br>
+<br>
+<br><font style="font-weight:700;font-size:1.2em">【屏幕识别】</font>
+<br>1 设置变量　名:a　类型:屏幕识别　值:本地或云识别
+<br>　　(文字识别有可能不准确，特别是体积小的
+<br>　　标点符号。如果文字其实是图片、文字无
+<br>　　节点、文字使用特殊字体，都可能影响识别)
+<br>　　
+<br>2 设置变量　名:b　表达式:　a.slice(0,-1)
+<br>　　(截取一段字符串，从位置0到-1。例如金额，
+<br>　　只截取数字部分，最后一个“元”字不截取。)
+<br>　　
+<br>3 输入内容　　内容:　"差距是：" + (X-b) + "元"　　
+<br>　　( X变量减去截取后的b变量，使用
+<br>　　括号优先计算，再前后添加文字。)
+<br>　　
+<br>　　
+<br>　　
+</font>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
